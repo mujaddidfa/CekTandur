@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const { db } = require('../config/db');
+=======
+const { db } = require('../db');
+>>>>>>> cc5dfc060c087b052e478a1f1b98130b290d168c
 const { v4: uuidv4 } = require('uuid');
 
 exports.registerUser = async (req, res) => {

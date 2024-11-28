@@ -1,5 +1,9 @@
 const express = require('express');
+<<<<<<< HEAD
 const connectDB = require('./config/db');
+=======
+const connectDB = require('./db');
+>>>>>>> cc5dfc060c087b052e478a1f1b98130b290d168c
 const bodyParser = require('body-parser');
 const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
