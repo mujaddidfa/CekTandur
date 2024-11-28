@@ -1,8 +1,9 @@
-<<<<<<< HEAD
+# Bagian lokal 
 node_modules
 .env
 ServiceAccount_Firebase.json
-=======
+
+# Bagian remote 
 *.iml
 .gradle
 /local.properties
@@ -18,4 +19,3 @@ ServiceAccount_Firebase.json
 .externalNativeBuild
 .cxx
 local.properties
->>>>>>> 1cd95895a643d75f2462b7a496fd0be76157b083
