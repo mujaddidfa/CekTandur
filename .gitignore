@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+node_modules
+.env
+ServiceAccount_Firebase.json
+=======
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+>>>>>>> 1cd95895a643d75f2462b7a496fd0be76157b083
