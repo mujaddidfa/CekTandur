@@ -5,7 +5,6 @@
     <string name="desc_welcome_2">Temukan penyebab penyakit dan solusi terbaik untuk merawat tanaman Anda agar tetap sehat</string>
     <string name="desc_welcome_3">Mari mulai perjalanan Anda bersama CekTandur untuk tanaman yang lebih sehat!</string>
     <string name="next">Next</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="register">Daftar</string>
     <string name="login">Login</string>
@@ -15,4 +14,8 @@
     <string name="create_account">Buat Akun</string>
     <string name="name">Nama</string>
     <string name="have_account">Sudah punya akun?</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

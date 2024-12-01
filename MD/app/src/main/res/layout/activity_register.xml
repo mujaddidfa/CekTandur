@@ -128,7 +128,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/green"
-        android:text="@string/login"
+        android:text="@string/register"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_have_account"
         app:layout_constraintEnd_toEndOf="parent"

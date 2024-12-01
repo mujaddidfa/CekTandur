@@ -13,8 +13,12 @@
         android:theme="@style/Theme.CekTandur"
         tools:targetApi="31">
         <activity
+            android:name=".ui.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main" />
+        <activity
             android:name=".ui.SplashScreenActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,11 +33,6 @@
             android:exported="false" />
         <activity
             android:name=".ui.welcome.WelcomeActivity"
-            android:exported="false">
-
-        </activity>
-        <activity
-            android:name=".ui.MainActivity"
             android:exported="false" />
 
         <meta-data
