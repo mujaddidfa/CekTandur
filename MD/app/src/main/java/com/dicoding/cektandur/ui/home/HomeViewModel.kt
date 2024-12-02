@@ -1,4 +1,4 @@
-package com.dicoding.cektandur.ui.ui.home
+package com.dicoding.cektandur.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

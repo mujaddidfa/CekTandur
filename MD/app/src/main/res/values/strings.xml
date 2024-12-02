@@ -18,4 +18,27 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_account">Account</string>
+    <string name="welcome_home">Selamat Datang, Pengguna</string>
+    <string name="about_plant">Tentang Tanaman</string>
+    <string name="riwayat">Riwayat</string>
+    <string name="plant_name">Nama Tanaman</string>
+
+    <string-array name="plant_name">
+        <item>Anggur</item>
+        <item>Apel</item>
+        <item>Jagung</item>
+        <item>Tomat</item>
+        <item>Kentang</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/grapes</item>
+        <item>@drawable/red_apple</item>
+        <item>@drawable/ear_of_corn</item>
+        <item>@drawable/tomato</item>
+        <item>@drawable/potato</item>
+    </integer-array>
+
 </resources>
