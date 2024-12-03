@@ -1,5 +1,6 @@
 package com.dicoding.cektandur.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,12 +14,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.dicoding.cektandur.R
 import com.dicoding.cektandur.databinding.FragmentHomeBinding
 import com.dicoding.cektandur.ui.PlantAdapter
+import com.dicoding.cektandur.ui.login.LoginActivity
 import com.dicoding.cektandur.utils.Plant
+import com.dicoding.cektandur.utils.SessionManager
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
+    private lateinit var sessionManager: SessionManager
 
     private lateinit var rvPlant: RecyclerView
     private val list = ArrayList<Plant>()
@@ -30,6 +34,18 @@ class HomeFragment : Fragment() {
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        sessionManager = SessionManager(requireContext())
+
+        val userName = sessionManager.getUserName()
+        binding.tvWelcome.text = getString(R.string.welcome_home, userName)
+
+        binding.btnLogout.setOnClickListener {
+            sessionManager.clearSession()
+            val intent = Intent(activity, LoginActivity::class.java)
+            startActivity(intent)
+            activity?.finish()
+        }
 
         rvPlant = binding.rvPlants
         rvPlant.setHasFixedSize(true)

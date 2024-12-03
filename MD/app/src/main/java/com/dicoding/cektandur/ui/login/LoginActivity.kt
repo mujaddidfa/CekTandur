@@ -3,20 +3,35 @@ package com.dicoding.cektandur.ui.login
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
+import android.widget.Toast
+import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import com.dicoding.cektandur.databinding.ActivityLoginBinding
+import com.dicoding.cektandur.di.Injection
+import com.dicoding.cektandur.ui.LoginViewModelFactory
 import com.dicoding.cektandur.ui.MainActivity
 import com.dicoding.cektandur.ui.register.RegisterActivity
+import com.dicoding.cektandur.utils.Result
+import com.dicoding.cektandur.utils.SessionManager
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
+    private val loginViewModel: LoginViewModel by viewModels {
+        LoginViewModelFactory(Injection.provideLoginRepository())
+    }
+    private lateinit var sessionManager: SessionManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        sessionManager = SessionManager(this)
 
         setupView()
         setupAction()
@@ -37,13 +52,37 @@ class LoginActivity : AppCompatActivity() {
     
     private fun setupAction() {
         binding.loginButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            val email = binding.edLoginEmail.text.toString()
+            val password = binding.edLoginPassword.text.toString()
+
+            loginViewModel.login(email, password).observe(this, Observer { result ->
+                when (result) {
+                    is Result.Loading -> showLoading(true)
+                    is Result.Success -> {
+                        showLoading(false)
+                        result.data.data?.name?.let { userName ->
+                            sessionManager.saveUserName(userName)
+                        }
+                        Toast.makeText(this, result.data.message, Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, MainActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                    }
+                    is Result.Error -> {
+                        showLoading(false)
+                        Toast.makeText(this, result.error, Toast.LENGTH_SHORT).show()
+                    }
+                }
+            })
         }
 
         binding.tvDontHaveAccount.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    private fun showLoading(isLoading: Boolean) {
+        binding.progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
     }
 }

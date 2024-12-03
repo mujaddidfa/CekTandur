@@ -20,10 +20,11 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_scan">Scan</string>
     <string name="title_account">Account</string>
-    <string name="welcome_home">Selamat Datang, Pengguna</string>
+    <string name="welcome_home">Selamat Datang, %1$s</string>
     <string name="about_plant">Tentang Tanaman</string>
     <string name="riwayat">Riwayat</string>
     <string name="plant_name">Nama Tanaman</string>
+    <string name="logout">Logout</string>
 
     <string-array name="plant_name">
         <item>Anggur</item>
