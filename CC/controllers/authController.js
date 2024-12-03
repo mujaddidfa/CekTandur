@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 const { db } = require('../config/db');
-=======
-const { db } = require('../db');
->>>>>>> cc5dfc060c087b052e478a1f1b98130b290d168c
 const { v4: uuidv4 } = require('uuid');
 
 exports.registerUser = async (req, res) => {
@@ -96,43 +92,67 @@ exports.loginUser = async (req, res) => {
 };
 
 
-exports.logoutUser = async (req, res) => {
-    const { email } = req.body; // Menggunakan email pengguna dari body request
+// exports.loginUser = async (req, res) => {
+//     const { email, password } = req.body;
+//     try {
+//         const userRef = db.collection('users').doc(email);
+//         const doc = await userRef.get();
+//         if (!doc.exists || doc.data().password !== password) {
+//             return res.status(400).json({
+//                 status: 400,
+//                 message: "Invalid credentials",
+//                 error: {
+//                     details: "Authentication failed. Please check your username and password."
+//                 }
+//             });
+//         }
+//         return res.status(200).json({
+//             status: 200,
+//             message: "User logged in successfully",
+//             data: doc.data()
+//         });
+//     } catch (error) {
+//         return res.status(500).json({
+//             status: 500,
+//             message: "Internal server error",
+//             error: {
+//                 details: error.message
+//             }
+//         });
+//     }
+// };
 
-    try {
-        // Cari user berdasarkan email
-        const userQuerySnapshot = await db.collection('users').where('email', '==', email).get();
 
-        // Validasi jika user tidak ditemukan
-        if (userQuerySnapshot.empty) {
-            return res.status(400).json({
-                status: 400,
-                message: "User not found",
-                error: {
-                    details: "Logout failed because the user does not exist."
-                }
-            });
-        }
+// const { db } = require('../config/config');
+// const hashPassword = require('../utils/hashPassword');
 
-        // Ambil dokumen user (dokumen pertama)
-        const userDoc = userQuerySnapshot.docs[0];
-        const userId = userDoc.id;
+// const registerUser = async (req, res) => {
+//     const { email, password } = req.body;
 
-        // Perbarui status logout di database (misalnya dengan atribut `isLoggedIn`)
-        await db.collection('users').doc(userId).update({ isLoggedIn: false });
+//     try {
+//         const hashedPassword = await hashPassword(password);
+//         await db.collection('users').doc(email).set({ email, password: hashedPassword });
 
-        return res.status(200).json({
-            status: 200,
-            message: "User logged out successfully"
-        });
+//         res.status(201).json({ message: 'User registered successfully' });
+//     } catch (error) {
+//         res.status(500).json({ error: error.message });
+//     }
+// };
 
-    } catch (error) {
-        return res.status(500).json({
-            status: 500,
-            message: "Internal server error",
-            error: {
-                details: error.message
-            }
-        });
-    }
-};
+// const loginUser = async (req, res) => {
+//     const { email, password } = req.body;
+
+//     try {
+//         const userDoc = await db.collection('users').doc(email).get();
+//         if (!userDoc.exists) return res.status(404).json({ error: 'User not found' });
+
+//         const isValidPassword = await hashPassword.compare(password, userDoc.data().password);
+//         if (!isValidPassword) return res.status(401).json({ error: 'Invalid credentials' });
+
+//         res.status(200).json({ message: 'Login successful' });
+//     } catch (error) {
+//         res.status(500).json({ error: error.message });
+//     }
+// };
+
+// module.exports = { registerUser, loginUser };

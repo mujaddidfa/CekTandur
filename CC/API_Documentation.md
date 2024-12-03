@@ -1,25 +1,11 @@
+
+
+
+
+
+---
+
 ## Authentication
-
-## User Management
-### GET `/api/users/:userId`
-- **Description**: Fetches information of a specific user.
-- **Response**: Returns user data based on userId.
-
-### PUT `/api/users/:userId`
-- **Description**: Updates user information.
-- **Request Body**:
-  ```json
-  {
-    "email": "string",
-    "password": "string"
-  }
-- **Response**: Returns updated user data.
-
-### DELETE `/api/users/:userId`
-- **Description**: Deletes a user by userId.
-- **Response**: Returns confirmation of user deletion.
-
-## Authorization
 ### POST `/api/auth/register`
 - **Description**: Registers a new user.
 - **Request Body**:
@@ -68,58 +54,23 @@
     "email": "string",
     "password": "string"
   }
-- **Response**
-- Success (200 OK):
-  ```json
-  {
-    "status": 200,
-    "message": "User logged in successfully"
-  }
+- **Response**: Returns a token for user authentication.
 
-- Error (400 Bad Request):
-  ```json
-  {
-    "status": 400,
-    "message": "Invalid credentials",
-    "error": {
-    "details": "Authentication failed. User not found or incorrect password."
-    }
-  }
+## User Management
+### GET `/api/users/:userId`
+- **Description**: Fetches information of a specific user.
+- **Response**: Returns user data based on userId.
 
-- Error (500 Internal Server Error):
-  ```json
-  {
-    "status": 500,
-    "message": "Internal server error",
-    "error": {
-    "details": "Error message here"
-    }
-  }
-
-### POST `/api/auth/logout`
-- **Description**: 
-Logs out a user and invalidates the authentication token
+### PUT `/api/users/:userId`
+- **Description**: Updates user information.
 - **Request Body**:
   ```json
   {
-    "email": "string"
+    "email": "string",
+    "password": "string"
   }
+- **Response**: Returns updated user data.
 
-- **Response**
-- Success (200 OK):
-  ```json
-  {
-    "status": 200,
-    "message": "User logged out successfully"
-  }
-  
-- Error (400 Bad Request):
-```json
-  {
-    "status": 400,
-    "message": "User not found",
-    "error": {
-    "details": "Logout failed because the user does not exist."
-    }
-  }
-  
+### DELETE `/api/users/:userId`
+- **Description**: Deletes a user by userId.
+- **Response**: Returns confirmation of user deletion.
