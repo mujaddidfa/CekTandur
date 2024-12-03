@@ -1,0 +1,429 @@
+{
+	"plants": {
+		"Class1": {
+			"disease_name": "Anggur Bercak Daun Isariopsis",
+			"description": "Penyakit bercak daun Isariopsis merupakan salah satu penyakit umum yang menyerang tanaman anggur dan dapat menyebabkan penurunan kualitas dan kuantitas hasil panen. Penyakit ini disebabkan oleh jamur Isariopsis clavispora.",
+			"causes": [
+				"Jamur Isariopsis clavispora: Jamur ini berkembang biak dengan cepat pada kondisi lingkungan yang lembab dan hangat.",
+				"Curah hujan tinggi: Curah hujan yang tinggi dan kelembaban udara yang tinggi menciptakan kondisi yang ideal bagi pertumbuhan jamur.",
+				"Sanitasi yang buruk: Sisa-sisa tanaman yang terinfeksi dapat menjadi sumber inokulum bagi penyakit ini."
+			],
+			"treatments": [
+				"Sanitasi perkebunan: Bersihkan kebun dari sisa-sisa tanaman yang terinfeksi dan lakukan pemangkasan pada bagian tanaman yang sakit.",
+				"Penggunaan varietas tahan: Pilih varietas anggur yang tahan terhadap penyakit ini.",
+				"Pengendalian kimia: Gunakan fungisida yang efektif untuk mengendalikan pertumbuhan jamur penyebab penyakit.",
+				"Pengendalian hayati: Memanfaatkan musuh alami jamur penyebab penyakit, seperti bakteri atau jamur antagonis.",
+				"Penting: Sebelum menggunakan pestisida, sebaiknya konsultasikan dengan petugas pertanian untuk mendapatkan rekomendasi yang tepat."
+			],
+			"alternative_products": [
+				"Trifloxystrobin",
+				"Mancozeb"
+			]
+		},
+		"Class2": {
+			"disease_name": "Anggur Esca (Campak Hitam)",
+			"description": "Penyakit esca atau yang lebih dikenal dengan campak hitam merupakan salah satu penyakit serius yang menyerang tanaman anggur dan dapat menyebabkan kerugian ekonomi yang signifikan bagi petani. Penyakit ini disebabkan oleh beberapa jenis jamur yang menyerang pembuluh kayu tanaman anggur.",
+			"causes": [
+				"Umur tanaman: Tanaman anggur yang lebih tua lebih rentan terhadap penyakit esca.",
+				"Kondisi lingkungan: Kondisi lingkungan yang kering dan panas dapat mempercepat perkembangan penyakit.",
+				"Praktik budidaya: Luka-luka pada tanaman akibat pemangkasan atau kerusakan mekanis dapat menjadi pintu masuk bagi jamur penyebab penyakit."
+			],
+			"treatments": [
+				"Penggunaan fungisida: Beberapa jenis fungisida dapat membantu menghambat pertumbuhan jamur penyebab penyakit, namun efektivitasnya terbatas.",
+				"Terapi: Terapi dengan cara menyuntikkan fungisida ke dalam batang tanaman dapat dilakukan pada tanaman yang masih muda dan belum terlalu parah infeksinya."
+			],
+			"alternative_products": [
+				"Thiophanate-methyl",
+				"Carbendazim"
+			]
+		},
+        "Class3": {
+			"disease_name": "Anggur Hitam Busuk",
+			"description": "Anggur hitam busuk merupakan masalah umum yang sering dihadapi oleh para petani anggur. Kondisi ini dapat disebabkan oleh beberapa faktor, mulai dari serangan jamur, bakteri, hingga kondisi lingkungan yang tidak sesuai.",
+			"causes": [
+				"Serangan jamur: Jamur seperti Botrytis cinerea (busuk buah) dan Alternaria spp. seringkali menjadi penyebab utama busuk pada buah anggur. Jamur ini dapat menginfeksi buah melalui luka atau kulit yang rusak.",
+				"Serangan bakteri: Bakteri seperti Erwinia spp. juga dapat menyebabkan busuk pada buah anggur.",
+				"Kondisi lingkungan: Kelembaban yang tinggi, suhu yang tidak stabil, dan sirkulasi udara yang buruk dapat menciptakan kondisi yang ideal bagi pertumbuhan jamur dan bakteri penyebab busuk.",
+                "Hama:Serangan hama seperti lalat buah atau serangga lainnya dapat menyebabkan luka pada buah dan menjadi pintu masuk bagi patogen penyebab busuk."
+			],
+			"treatments": [
+				"Lakukan pengendalian hama secara teratur untuk mencegah kerusakan pada buah.",
+				"Semprotkan fungisida yang sesuai secara berkala untuk mencegah dan mengendalikan serangan jamur",
+				"Hindari penyiraman berlebihan yang dapat meningkatkan kelembaban dan memicu pertumbuhan jamur.",
+				"Berikan pupuk yang seimbang untuk meningkatkan daya tahan tanaman terhadap penyakit."
+			],
+			"alternative_products": [
+				"Mancozeb",
+				"Chlorothalonil"
+			]
+		},
+		"Class4": {
+			"disease_name": "Anggur Sehat",
+			"description": "Sejauh ini Tanaman anda terlihat sehat, terus rawat dengan baik dan berikan pupuk dan perlindungan lainya secara teratur.",
+			"causes": [],
+			"treatments": [],
+			"alternative_products": []
+		},
+        "Class5":{
+            "disease_name": "Apel Busuk Hitam",
+            "description": "Apel busuk hitam merupakan salah satu masalah umum yang sering dihadapi oleh petani apel. Kondisi ini dapat menyebabkan kerugian yang signifikan karena dapat merusak kualitas dan kuantitas hasil panen.",
+            "causes": [
+                "Serangan jamur: Jamur seperti Botrytis cinerea (busuk buah) dan Alternaria spp. seringkali menjadi penyebab utama busuk pada buah apel. Jamur ini dapat menginfeksi buah melalui luka atau kulit yang rusak.",
+                "Kondisi lingkungan: Kelembaban yang tinggi, suhu yang tidak stabil, dan sirkulasi udara yang buruk dapat menciptakan kondisi yang ideal bagi pertumbuhan jamur dan bakteri penyebab busuk.",
+                "Hama:Serangan hama seperti lalat buah atau serangga lainnya dapat menyebabkan luka pada buah dan menjadi pintu masuk bagi patogen penyebab busuk."
+            ],
+            "treatments": [
+                "Lakukan pengendalian hama secara teratur untuk mencegah kerusakan pada buah.",
+                "Semprotkan fungisida yang sesuai secara berkala untuk mencegah dan mengendalikan serangan jamur.",
+                "Hindari penyiraman berlebihan yang dapat meningkatkan kelembaban dan memicu pertumbuhan jamur.",
+                "Berikan pupuk yang seimbang untuk meningkatkan daya tahan tanaman terhadap penyakit."
+            ],
+            "alternative_products": [
+                "Mancozeb",
+                "Chlorothalonil"
+            ]
+        },
+        "Class6": {
+            "disease_name": "Karat Apel Cedar",
+            "description": "Karat apel cedar adalah penyakit jamur yang dapat menyebabkan kerusakan serius pada tanaman apel. Penyakit ini memerlukan dua inang untuk menyelesaikan siklus hidupnya: pohon cedar dan pohon apel.",
+            "causes": [
+                "Karat apel cedar adalah penyakit kompleks yang disebabkan oleh jamur Gymnosporangium juniperi-virginianae. Jamur ini memiliki siklus hidup yang unik, melibatkan dua inang yang berbeda: pohon cedar (Juniperus spp.) dan pohon apel (Malus spp.)."
+            ],
+            "treatments": [
+                "Penanamanjarak jauh: Menjaga jarak antara pohon apel dan pohon cedar dapat mengurangi risiko infeksi.",
+                "Pemangkasan: Memangkas cabang-cabang cedar yang terinfeksi dapat mengurangi jumlah spora jamur yang dihasilkan.",
+                "Pilihan varietas: Beberapa varietas apel lebih tahan terhadap karat cedar daripada yang lain."
+            ],
+            "alternative_products": [
+                "Mancozeb",
+                "Chlorothalonil",
+                "Captan"
+            ]
+        },
+        "Class7": {
+            "disease_name": " Keropeng Apel",
+            "description": " Keropeng pada apel, atau yang secara ilmiah dikenal sebagai apple scab, merupakan salah satu penyakit tanaman apel yang cukup umum. Penyakit ini disebabkan oleh jamur Venturia inaequalis. Jamur ini menyerang daun, bunga, dan buah apel, menyebabkan bercak-bercak cokelat gelap atau hitam yang kasar dan retak, mirip dengan keropeng",
+            "causes": [
+                "JamurVenturia inaequalis: Jamur ini berkembang dengan baik dalam kondisi lembap dan dingin.",
+                "Infeksi Primer: Infeksi biasanya dimulai pada daun muda yang baru tumbuh.",
+                "Penyebaran: Spora jamur menyebar melalui angin dan air hujan ke bagian tanaman lainnya."
+            ],
+            "treatments": [
+                "Pemangkasan: Memangkas cabang yang sakit atau mati dapat mengurangi sumber infeksi.",
+                "Sanitasi kebun: Membersihkan kebun dari daun-daun yang jatuh dan sisa-sisa tanaman yang terinfeksi dapat mengurangi jumlah spora jamur.",
+                "Pilihan varietas: Pilih varietas apel yang tahan terhadap penyakit keropeng.",
+                "Rotasi tanaman: Hindari menanam apel di lahan yang sama secara terus-menerus."
+            ],
+            "alternative_products": [
+                "Captan",
+                "Chlorothalonil",
+                "Dithiocarbamates"
+            ]
+        },
+        "Class8": {
+            "disease_name": " Apel Sehat",
+            "description": " Sejauh ini Tanaman anda terlihat sehat, terus rawat dengan baik dan berikan pupuk dan perlindungan lainya secara teratur.",
+            "causes": [],
+            "treatments": [],
+            "alternative_products": []
+        },
+        "Class9": {
+            "disease_name": "Jagung Bercak Daun Abu-Abu",
+            "description": " Bercak daun abu-abu adalah salah satu penyakit tanaman jagung yang cukup umum dan dapat menyebabkan penurunan hasil panen secara signifikan. Penyakit ini disebabkan oleh jamur Cercospora zeae-maydis",
+            "causes": [
+                "JamurCercospora zeae-maydis: Jamur ini bertahan hidup pada sisa-sisa tanaman jagung yang terinfeksi di tanah.",
+                "Penyebaran: Spora jamur menyebar melalui percikan air hujan dan angin."
+            ],
+            "treatments": [
+                "Rotasi tanaman: Hindari menanam jagung secara terus-menerus di lahan yang sama",
+                "Sanitasi: Bersihkan lahan dari sisa-sisa tanaman setelah panen dan sebelum tanam.",
+                "Jarak tanam: Berikan jarak tanam yang cukup untuk meningkatkan sirkulasi udara.",
+                "Varietas tahan: Pilih varietas jagung yang tahan terhadap penyakit bercak daun abu-abu."
+            ],
+            "alternative_products": [
+                "Mancozeb",
+                "Trifloxystrobin",
+                "Azoxystrobin"
+            ]
+        },
+        "Class10": {
+            "disease_name": "Jagung Busuk Daun",
+            "description": " Busuk daun pada jagung merupakan salah satu penyakit tanaman jagung yang cukup serius dan dapat menyebabkan kerugian yang signifikan bagi petani. Penyakit ini disebabkan oleh beberapa jenis jamur patogen yang menyerang daun jagung, menyebabkan kerusakan pada jaringan daun, dan menghambat proses fotosintesis.",
+            "causes": [
+                " Helminthosporium maydis: Menyebabkan penyakit hawar daun.",
+                "Physoderma maydis: Menyebabkan penyakit bercak daun.",
+                " Kabatiella zeae: Menyebabkan penyakit bercak daun."
+            ],
+            "treatments": [
+                "Rotasi tanaman: Hindari menanam jagung secara terus-menerus di lahan yang sama.",
+                " Sanitasi: Bersihkan lahan dari sisa-sisa tanaman setelah panen.",
+                "Jaraktanam: Berikan jarak tanam yang cukup untuk meningkatkan sirkulasi udara."
+            ],
+            "alternative_products": [
+                "Mancozeb",
+                "Chlorothalonil",
+                "Trifloxystrobin"
+            ]
+        },
+        "Class11": {
+			"disease_name": "Jagung Karat Umum",
+			"description": "Gejala karat jagung yang paling khas adalah munculnya pustula (bintil-bintil kecil) berwarna oranye atau cokelat pada permukaan daun. Pustula ini berisi spora jamur yang mudah menyebar melalui angin.",
+			"causes": [
+				"Jamur Puccinia sorghi dan Puccinia polysora: Kedua jenis jamur ini merupakan penyebab utama penyakit karat jagung.",
+				"Kondisi lingkungan: Cuaca lembap dan hangat sangat mendukung pertumbuhan jamur penyebab penyakit.",
+				"Penyebaran spora: Spora jamur menyebar melalui angin dan percikan air hujan."
+			],
+			"treatments": [
+				"Rotasi tanaman: Hindari menanam jagung secara terus-menerus di lahan yang sama.",
+				"Sanitasi: Bersihkan lahan dari sisa-sisa tanaman setelah panen.",
+				"Jarak tanam: Berikan jarak tanam yang cukup untuk meningkatkan sirkulasi udara.",
+				"Varietas tahan: Pilih varietas jagung yang tahan terhadap penyakit karat."
+			],
+			"alternative_products": [
+				"Mancozeb",
+				"Chlorothalonil",
+				"Trifloxystrobin"
+			]
+		},
+		"Class12": {
+			"disease_name": "Jagung Sehat",
+			"description": "Sejauh ini Tanaman anda terlihat sehat, terus rawat dengan baik dan berikan pupuk dan perlindungan lainnya secara teratur.",
+			"causes": [],
+			"treatments": [],
+			"alternative_products": []
+		},
+		"Class13": {
+			"disease_name": "Kentang Busuk Daun Dini",
+			"description": "Busuk daun dini atau early blight merupakan salah satu penyakit penting yang menyerang tanaman kentang. Penyakit ini disebabkan oleh jamur Alternaria solani. Jika tidak segera diatasi, penyakit ini dapat menyebabkan penurunan hasil panen yang signifikan.",
+			"causes": [
+				"Jamur Alternaria solani: Jamur ini bertahan hidup pada sisa-sisa tanaman yang terinfeksi di tanah atau pada benih.",
+				"Penyebaran: Spora jamur menyebar melalui angin, air, dan serangga."
+			],
+			"treatments": [
+				"Rotasi tanaman: Hindari menanam kentang secara terus-menerus di lahan yang sama.",
+				"Sanitasi: Bersihkan lahan dari sisa-sisa tanaman setelah panen.",
+				"Jarak tanam: Berikan jarak tanam yang cukup untuk meningkatkan sirkulasi udara.",
+				"Varietas tahan: Pilih varietas kentang yang tahan terhadap penyakit."
+			],
+			"alternative_products": [
+				"Mancozeb",
+				"Chlorothalonil"
+			]
+		},
+		"Class14": {
+			"disease_name": "Kentang Busuk Daun Telat",
+			"description": "Busuk daun telat adalah salah satu penyakit tanaman kentang yang paling merusak. Penyakit ini disebabkan oleh jamur Alternaria solani dan dapat menyebabkan kerugian yang signifikan bagi petani kentang.",
+			"causes": [
+				"Jamur Alternaria solani: Jamur ini bertahan hidup pada sisa-sisa tanaman yang terinfeksi di tanah atau pada benih.",
+				"Penyebaran: Spora jamur menyebar melalui angin, air, dan serangga."
+			],
+			"treatments": [
+				"Rotasi tanaman: Hindari menanam kentang secara terus-menerus di lahan yang sama.",
+				"Sanitasi: Bersihkan lahan dari sisa-sisa tanaman setelah panen.",
+				"Jarak tanam: Berikan jarak tanam yang cukup untuk meningkatkan sirkulasi udara.",
+				"Varietas tahan: Pilih varietas kentang yang tahan terhadap penyakit."
+			],
+			"alternative_products": [
+				"Mancozeb",
+				"Chlorothalonil"
+			]
+		},
+		"Class15": {
+			"disease_name": "Kentang Sehat",
+			"description": "Sejauh ini Tanaman anda terlihat sehat, terus rawat dengan baik dan berikan pupuk dan perlindungan lainnya secara teratur.",
+			"causes": [],
+			"treatments": [],
+			"alternative_products": []
+		},
+		"Class16": {
+			"disease_name": "Tomat Bercak Bakteri",
+			"description": "Penyakit bercak bakteri merupakan salah satu penyakit tanaman tomat yang cukup umum dan dapat menyebabkan kerugian yang signifikan. Penyakit ini disebabkan oleh bakteri Xanthomonas campestris pv. vesicatoria (Xcv).",
+			"causes": [
+				"Bakteri Xanthomonas campestris pv. vesicatoria: Bakteri ini menginfeksi tanaman melalui luka-luka kecil pada tanaman, seperti luka akibat serangga atau alat pertanian.",
+				"Penyebaran: Bakteri dapat menyebar melalui air hujan, angin, serangga, dan alat pertanian yang terkontaminasi."
+			],
+			"treatments": [
+				"Rotasi tanaman: Hindari menanam tomat secara terus-menerus di lahan yang sama.",
+				"Sanitasi: Bersihkan lahan dari sisa-sisa tanaman setelah panen.",
+				"Jarak tanam: Berikan jarak tanam yang cukup untuk meningkatkan sirkulasi udara.",
+				"Varietas tahan: Pilih varietas tomat yang tahan terhadap penyakit."
+			],
+			"alternative_products": [
+				"Cuproxat",
+				"Kocide",
+				"Bordeaux mixture"
+			]
+		},
+        "Class17": {
+			"disease_name": "Tomat Bercak Daun",
+			"description": "Penyakit bercak daun pada tomat merupakan salah satu penyakit tanaman yang cukup umum dan dapat menyebabkan kerugian yang signifikan. Penyakit ini disebabkan oleh beberapa jenis patogen, baik jamur maupun bakteri, yang menyerang daun tomat.",
+			"causes": [
+				"Cuaca: Cuaca lembap dan hangat sangat mendukung pertumbuhan patogen penyebab penyakit.",
+				"Kepadatan tanaman: Tanaman yang terlalu rapat akan mengurangi sirkulasi udara dan meningkatkan kelembapan, sehingga mempercepat penyebaran penyakit.",
+				"Sisa-sisa tanaman: Sisa-sisa tanaman yang terinfeksi menjadi sumber inokulum bagi penyakit.",
+				"Kualitas benih: Benih yang terinfeksi dapat menjadi sumber penyebaran penyakit."
+			],
+			"treatments": [
+				"Rotasi tanaman: Hindari menanam tomat secara terus-menerus di lahan yang sama.",
+				"Sanitasi: Bersihkan lahan dari sisa-sisa tanaman setelah panen.",
+				"Jarak tanam: Berikan jarak tanam yang cukup untuk meningkatkan sirkulasi udara.",
+				"Varietas tahan: Pilih varietas tomat yang tahan terhadap penyakit."
+			],
+			"alternative_products": [
+				"Mancozeb",
+				"Chlorothalonil",
+				"Trifloxystrobin",
+				"Cuproxat",
+				"Streptomycin"
+			]
+		},
+		"Class18": {
+			"disease_name": "Tomat Bercak Target",
+			"description": "Bercak target adalah salah satu jenis penyakit tanaman tomat yang cukup umum dan dapat menyebabkan kerusakan yang cukup parah. Penyakit ini ditandai dengan munculnya bercak-bercak pada daun yang berbentuk seperti target panah.",
+			"causes": [
+				"Penyakit bercak target pada tomat umumnya disebabkan oleh jamur Alternaria solani. Jamur ini sangat menyukai kondisi lingkungan yang hangat dan lembap. Spora jamur dapat menyebar melalui angin, air, atau serangga."
+			],
+			"treatments": [
+				"Rotasi tanaman: Hindari menanam tomat secara terus-menerus di lahan yang sama.",
+				"Sanitasi: Bersihkan lahan dari sisa-sisa tanaman setelah panen.",
+				"Jarak tanam: Berikan jarak tanam yang cukup untuk meningkatkan sirkulasi udara.",
+				"Varietas tahan: Pilih varietas tomat yang tahan terhadap penyakit."
+			],
+			"alternative_products": [
+				"Azoxystrobin",
+				"Chlorothalonil",
+				"Mancozeb"
+			]
+		},
+		"Class19": {
+			"disease_name": "Tomat Busuk Daun Dini",
+			"description": "Busuk daun dini pada tomat merupakan salah satu penyakit tanaman yang paling umum dan merugikan. Penyakit ini disebabkan oleh jamur Alternaria solani.",
+			"causes": [
+				"Jamur Alternaria solani: Jamur ini bertahan hidup pada sisa-sisa tanaman yang terinfeksi di tanah atau pada benih.",
+				"Penyebaran: Spora jamur menyebar melalui angin, air, dan serangga."
+			],
+			"treatments": [
+				"Rotasi tanaman: Hindari menanam tomat secara terus-menerus di lahan yang sama.",
+				"Sanitasi: Bersihkan lahan dari sisa-sisa tanaman setelah panen.",
+				"Jarak tanam: Berikan jarak tanam yang cukup untuk meningkatkan sirkulasi udara.",
+				"Varietas tahan: Pilih varietas tomat yang tahan terhadap penyakit."
+			],
+			"alternative_products": [
+				"Boscalid",
+				"Pyraclostrobin",
+				"Chlorothalonil",
+				"Mancozeb"
+			]
+		},
+		"Class20": {
+			"disease_name": "Tomat Busuk Daun Telat",
+			"description": "Busuk daun telat (late blight) adalah penyakit tanaman tomat yang sangat merusak dan disebabkan oleh jamur Phytophthora infestans. Penyakit ini dapat menyerang semua bagian tanaman tomat, mulai dari daun, batang, hingga buah.",
+			"causes": [
+				"Jamur Phytophthora infestans: Jamur ini sangat menyukai kondisi lingkungan yang lembap dan dingin.",
+				"Penyebaran: Spora jamur dapat menyebar melalui angin, air, dan serangga."
+			],
+			"treatments": [
+				"Rotasi tanaman: Hindari menanam tomat secara terus-menerus di lahan yang sama.",
+				"Sanitasi: Bersihkan lahan dari sisa-sisa tanaman setelah panen.",
+				"Jarak tanam: Berikan jarak tanam yang cukup untuk meningkatkan sirkulasi udara.",
+				"Varietas tahan: Pilih varietas tomat yang tahan terhadap penyakit."
+			],
+			"alternative_products": [
+				"Dimethomorph",
+				"Mandipropamid",
+				"Mancozeb",
+				"Chlorothalonil"
+			]
+		},
+		"Class21": {
+			"disease_name": "Tomat Daun Keriting Kuning",
+			"description": "Daun tomat yang keriting dan menguning adalah masalah umum yang sering dihadapi oleh para petani tomat. Kondisi ini dapat disebabkan oleh berbagai faktor, mulai dari kekurangan nutrisi, serangan hama, hingga infeksi virus.",
+			"causes": [
+				"Kekurangan atau kelebihan air: Penyiraman yang tidak tepat, baik terlalu sedikit maupun terlalu banyak, dapat menyebabkan daun keriting dan menguning.",
+				"Kekurangan nutrisi: Kekurangan nutrisi seperti magnesium, kalium, atau zat besi dapat menyebabkan daun menjadi klorosis (menguning) dan keriting.",
+				"Serangan hama: Hama seperti kutu daun atau tungau dapat menghisap cairan tanaman dan menyebabkan daun keriting dan menguning.",
+				"Infeksi virus: Virus seperti Tomato Yellow Leaf Curl Virus (TYLCV) dapat menyebabkan daun menjadi keriting, menguning, dan mengkerut.",
+				"Gangguan fisiologis: Stres lingkungan seperti suhu ekstrem, paparan sinar matahari langsung yang berlebihan, atau kerusakan akar juga dapat menyebabkan daun keriting dan menguning."
+			],
+			"treatments": [
+				"Periksa penyiraman: Pastikan tanaman tomat mendapatkan air yang cukup, tetapi jangan sampai tergenang. Atur jadwal penyiraman yang teratur.",
+				"Berikan pupuk: Berikan pupuk yang mengandung unsur hara makro dan mikro yang lengkap.",
+				"Pengendalian hama: Semprotkan pestisida yang sesuai untuk mengendalikan kutu daun atau tungau.",
+				"Pencegahan virus: Gunakan varietas tomat yang tahan terhadap virus TYLCV. Lakukan pengendalian vektor (lalat putih).",
+				"Perbaikan kondisi lingkungan: Pastikan tanaman tomat tumbuh di tempat yang terkena sinar matahari yang cukup."
+			],
+			"alternative_products": [
+				"Imidacloprid",
+				"Thiamethoxam"
+			]
+		},
+		"Class22": {
+			"disease_name": "Tomat Jamur Septoria Lycopersici",
+			"description": "Penyakit bercak daun Septoria adalah salah satu penyakit tanaman tomat yang cukup umum dan disebabkan oleh jamur Septoria lycopersici. Penyakit ini dapat menyebabkan kerusakan yang signifikan pada tanaman tomat, terutama pada daun.",
+			"causes": [
+				"Jamur Septoria lycopersici: Spora jamur dapat bertahan hidup di dalam sisa-sisa tanaman yang terinfeksi atau pada benih.",
+				"Kondisi lingkungan: Cuaca yang lembap dan dingin sangat mendukung pertumbuhan jamur Septoria lycopersici."
+			],
+			"treatments": [
+				"Rotasi tanaman: Hindari menanam tomat secara terus-menerus di lahan yang sama.",
+				"Sanitasi: Bersihkan lahan dari sisa-sisa tanaman setelah panen.",
+				"Jarak tanam: Berikan jarak tanam yang cukup untuk meningkatkan sirkulasi udara.",
+				"Varietas tahan: Pilih varietas tomat yang tahan terhadap penyakit."
+			],
+			"alternative_products": [
+				"Chlorothalonil",
+				"Mancozeb",
+				"Trifloxystrobin"
+			]
+		},
+        "Class23": {
+			"disease_name": "Tomat Tungau Laba-Laba Berbintik",
+			"description": "Tungau laba-laba berbintik adalah sejenis tungau kecil berwarna merah atau kuning dengan bintik-bintik hitam. Mereka hidup berkoloni di bagian bawah daun dan menghisap cairan tanaman. Serangan tungau ini dapat menyebabkan daun menjadi menguning, kering, dan akhirnya rontok.",
+			"causes": [
+				"Kondisi lingkungan: Cuaca panas dan kering serta kelembaban rendah sangat mendukung pertumbuhan tungau.",
+				"Kepadatan tanaman: Tanaman yang terlalu rapat akan mengurangi sirkulasi udara dan meningkatkan kelembaban, menciptakan lingkungan yang ideal bagi tungau.",
+				"Kurangnya predator alami: Keberadaan predator alami seperti serangga predator dapat membantu mengendalikan populasi tungau."
+			],
+			"treatments": [
+				"Predator alami: Perkenalkan predator alami seperti tungau predator atau serangga predator lainnya ke dalam pertanaman.",
+				"Pengendalian lingkungan: Pastikan tanaman memiliki sirkulasi udara yang baik dan hindari kelembaban yang berlebihan.",
+				"Penggunaan pestisida: Gunakan pestisida yang sesuai untuk mengendalikan populasi tungau."
+			],
+			"alternative_products": [
+				"Abamectin",
+				"Bifenazate",
+				"Fenpyroximate",
+				"Spirotetramat"
+			]
+		},
+		"Class24": {
+			"disease_name": "Tomat Virus Mosaik Tomat",
+			"description": "Virus mosaik tomat adalah penyakit yang disebabkan oleh beberapa jenis virus, seperti Cucumber Mosaic Virus (CMV) dan Tomato Mosaic Virus (TMV). Virus ini menyerang tanaman tomat dan menyebabkan gejala khas berupa mosaik pada daun. Tidak ada produk yang dapat menyembuhkan tanaman yang sudah terinfeksi virus mosaik. Pencegahan adalah cara terbaik untuk mengatasi penyakit ini.",
+			"causes": [
+				"Virus: CMV dan TMV adalah virus yang paling sering menyebabkan penyakit mosaik pada tomat.",
+				"Vektor: Virus ini biasanya disebarkan oleh serangga seperti kutu daun dan lalat putih.",
+				"Benih: Virus juga dapat ditularkan melalui benih yang terinfeksi.",
+				"Alat pertanian: Alat pertanian yang terkontaminasi virus juga dapat menjadi sumber penularan."
+			],
+			"treatments": [
+				"Pengendalian vektor: Gunakan insektisida yang aman untuk tanaman untuk mengendalikan kutu daun dan lalat putih.",
+				"Sanitasi: Bersihkan lahan dari sisa-sisa tanaman setelah panen.",
+				"Rotasi tanaman: Hindari menanam tomat secara terus-menerus di lahan yang sama.",
+				"Gunakan varietas tahan: Pilih varietas tomat yang tahan terhadap virus mosaik.",
+				"Benih sehat: Gunakan benih yang bebas dari virus.",
+				"Alat pertanian: Bersihkan dan disinfeksi alat pertanian sebelum dan sesudah digunakan."
+			],
+			"alternative_products": [
+				"Insektisida",
+				"Disinfektan"
+			]
+		},
+		"Class25": {
+			"disease_name": "Tomat Sehat",
+			"description": "Sejauh ini Tanaman anda terlihat sehat, terus rawat dengan baik dan berikan pupuk dan perlindungan lainnya secara teratur.",
+			"causes": [],
+			"treatments": [],
+			"alternative_products": []
+		}
+	}
+}

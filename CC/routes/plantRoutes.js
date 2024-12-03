@@ -1,8 +1,8 @@
-/* const express = require('express');
-const { analyzeImage } = require('../controllers/plantController');
+const express = require('express');
 const router = express.Router();
+const plantController = require('../controllers/plantController');
 
-router.post('/analyze', analyzeImage);
+router.get('/', plantController.getAllPlants);
+router.get('/:class', plantController.getPlantByClass);
 
 module.exports = router;
-   */
