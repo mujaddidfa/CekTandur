@@ -5,24 +5,24 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.dicoding.cektandur.R
+import com.dicoding.cektandur.data.pref.UserPreferences
 import com.dicoding.cektandur.databinding.FragmentHomeBinding
 import com.dicoding.cektandur.ui.PlantAdapter
 import com.dicoding.cektandur.ui.login.LoginActivity
 import com.dicoding.cektandur.utils.Plant
-import com.dicoding.cektandur.utils.SessionManager
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-    private lateinit var sessionManager: SessionManager
+    private lateinit var userPreferences: UserPreferences
 
     private lateinit var rvPlant: RecyclerView
     private val list = ArrayList<Plant>()
@@ -35,16 +35,20 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        sessionManager = SessionManager(requireContext())
+        userPreferences = UserPreferences.getInstance(requireContext())
 
-        val userName = sessionManager.getUserName()
-        binding.tvWelcome.text = getString(R.string.welcome_home, userName)
+        lifecycleScope.launch {
+            val userName = userPreferences.userName.first()
+            binding.tvWelcome.text = getString(R.string.welcome_home, userName)
+        }
 
         binding.btnLogout.setOnClickListener {
-            sessionManager.clearSession()
-            val intent = Intent(activity, LoginActivity::class.java)
-            startActivity(intent)
-            activity?.finish()
+            lifecycleScope.launch {
+                userPreferences.clearSession()
+                val intent = Intent(activity, LoginActivity::class.java)
+                startActivity(intent)
+                activity?.finish()
+            }
         }
 
         rvPlant = binding.rvPlants
