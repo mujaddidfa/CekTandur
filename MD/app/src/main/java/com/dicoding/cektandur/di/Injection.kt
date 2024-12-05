@@ -6,7 +6,7 @@ import com.dicoding.cektandur.data.repository.AuthRepository
 
 object Injection {
     fun provideAuthRepository(context: Context): AuthRepository {
-        val apiService = ApiConfig.provideApiService()
+        val apiService = ApiConfig.getApiService()
         return AuthRepository(apiService)
     }
 }
