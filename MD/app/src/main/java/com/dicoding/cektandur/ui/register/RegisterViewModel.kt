@@ -2,11 +2,11 @@ package com.dicoding.cektandur.ui.register
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
-import com.dicoding.cektandur.data.repository.RegisterRepository
+import com.dicoding.cektandur.data.repository.AuthRepository
 import com.dicoding.cektandur.utils.Result
 import kotlinx.coroutines.Dispatchers
 
-class RegisterViewModel(private val repository: RegisterRepository) : ViewModel() {
+class RegisterViewModel(private val repository: AuthRepository) : ViewModel() {
 
     fun register(name: String, email: String, password: String) = liveData(Dispatchers.IO) {
         emit(Result.Loading)

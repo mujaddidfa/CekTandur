@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.dicoding.cektandur.data.pref.UserPreferences
 import com.dicoding.cektandur.databinding.ActivityLoginBinding
-import com.dicoding.cektandur.di.Injection
 import com.dicoding.cektandur.ui.LoginViewModelFactory
 import com.dicoding.cektandur.ui.MainActivity
 import com.dicoding.cektandur.ui.register.RegisterActivity
@@ -22,7 +21,7 @@ import kotlinx.coroutines.launch
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
     private val loginViewModel: LoginViewModel by viewModels {
-        LoginViewModelFactory(Injection.provideLoginRepository())
+        LoginViewModelFactory.getInstance(this)
     }
     private lateinit var userPreferences: UserPreferences
 

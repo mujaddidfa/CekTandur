@@ -12,23 +12,6 @@ class UserPreferences private constructor(context: Context) {
     private val Context.dataStore by preferencesDataStore(name = PREFS_NAME)
     private val dataStore = context.dataStore
 
-    companion object {
-        private const val PREFS_NAME = "user_session"
-        private val USER_ID_KEY = stringPreferencesKey("user_id")
-        private val USER_NAME_KEY = stringPreferencesKey("user_name")
-
-        @Volatile
-        private var INSTANCE: UserPreferences? = null
-
-        fun getInstance(context: Context): UserPreferences {
-            return INSTANCE ?: synchronized(this) {
-                val instance = UserPreferences(context)
-                INSTANCE = instance
-                instance
-            }
-        }
-    }
-
     val userId: Flow<String?> = dataStore.data.map { preferences ->
         preferences[USER_ID_KEY]
     }
@@ -52,6 +35,23 @@ class UserPreferences private constructor(context: Context) {
     suspend fun clearSession() {
         dataStore.edit { preferences ->
             preferences.clear()
+        }
+    }
+
+    companion object {
+        private const val PREFS_NAME = "user_session"
+        private val USER_ID_KEY = stringPreferencesKey("user_id")
+        private val USER_NAME_KEY = stringPreferencesKey("user_name")
+
+        @Volatile
+        private var INSTANCE: UserPreferences? = null
+
+        fun getInstance(context: Context): UserPreferences {
+            return INSTANCE ?: synchronized(this) {
+                val instance = UserPreferences(context)
+                INSTANCE = instance
+                instance
+            }
         }
     }
 }

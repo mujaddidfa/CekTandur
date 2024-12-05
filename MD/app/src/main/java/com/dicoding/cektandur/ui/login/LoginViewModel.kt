@@ -2,11 +2,11 @@ package com.dicoding.cektandur.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
-import com.dicoding.cektandur.data.repository.LoginRepository
+import com.dicoding.cektandur.data.repository.AuthRepository
 import com.dicoding.cektandur.utils.Result
 import kotlinx.coroutines.Dispatchers
 
-class LoginViewModel(private val repository: LoginRepository) : ViewModel() {
+class LoginViewModel(private val repository: AuthRepository) : ViewModel() {
 
     fun login(email: String, password: String) = liveData(Dispatchers.IO) {
         emit(Result.Loading)
