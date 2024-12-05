@@ -17,7 +17,7 @@ import com.dicoding.cektandur.utils.Result
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
     private val registerViewModel: RegisterViewModel by viewModels {
-        RegisterViewModelFactory.getInstance(this)
+        RegisterViewModelFactory.getInstance()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

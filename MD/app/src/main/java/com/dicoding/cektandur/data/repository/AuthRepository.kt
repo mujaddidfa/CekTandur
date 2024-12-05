@@ -23,4 +23,14 @@ class AuthRepository(private val apiService: ApiService) {
             apiService.register(registerRequest)
         }
     }
+
+    companion object {
+        @Volatile
+        private var INSTANCE: AuthRepository? = null
+
+        fun getInstance(apiService: ApiService): AuthRepository =
+            INSTANCE ?: synchronized(this) {
+                INSTANCE ?: AuthRepository(apiService)
+            }.also { INSTANCE = it }
+    }
 }

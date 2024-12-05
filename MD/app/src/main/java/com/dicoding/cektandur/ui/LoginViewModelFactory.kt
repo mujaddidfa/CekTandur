@@ -1,6 +1,5 @@
 package com.dicoding.cektandur.ui
 
-import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.cektandur.data.repository.AuthRepository
@@ -17,9 +16,9 @@ class LoginViewModelFactory(private val repository: AuthRepository) : ViewModelP
         @Volatile
         private var INSTANCE: LoginViewModelFactory? = null
 
-        fun getInstance(context: Context): LoginViewModelFactory =
+        fun getInstance(): LoginViewModelFactory =
             INSTANCE ?: synchronized(this) {
-                INSTANCE ?: LoginViewModelFactory(Injection.provideAuthRepository(context))
+                INSTANCE ?: LoginViewModelFactory(Injection.provideAuthRepository())
             }.also { INSTANCE = it }
     }
 }

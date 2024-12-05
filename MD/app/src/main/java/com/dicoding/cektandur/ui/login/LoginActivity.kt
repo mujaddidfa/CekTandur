@@ -21,7 +21,7 @@ import kotlinx.coroutines.launch
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
     private val loginViewModel: LoginViewModel by viewModels {
-        LoginViewModelFactory.getInstance(this)
+        LoginViewModelFactory.getInstance()
     }
     private lateinit var userPreferences: UserPreferences
 

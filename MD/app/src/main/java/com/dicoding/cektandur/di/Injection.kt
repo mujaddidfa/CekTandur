@@ -1,12 +1,11 @@
 package com.dicoding.cektandur.di
 
-import android.content.Context
 import com.dicoding.cektandur.data.api.ApiConfig
 import com.dicoding.cektandur.data.repository.AuthRepository
 
 object Injection {
-    fun provideAuthRepository(context: Context): AuthRepository {
+    fun provideAuthRepository(): AuthRepository {
         val apiService = ApiConfig.getApiService()
-        return AuthRepository(apiService)
+        return AuthRepository.getInstance(apiService)
     }
 }
