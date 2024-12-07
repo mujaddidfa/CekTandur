@@ -1,5 +1,6 @@
 package com.dicoding.cektandur.ui.home
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -38,8 +39,15 @@ class HomeFragment : Fragment() {
         userPreferences = UserPreferences.getInstance(requireContext())
 
         lifecycleScope.launch {
-            val userName = userPreferences.userName.first()
-            binding.tvWelcome.text = getString(R.string.welcome_home, userName)
+            val isLogin = userPreferences.isLogin.first()
+            if (!isLogin) {
+                val intent = Intent(activity, LoginActivity::class.java)
+                startActivity(intent)
+                activity?.finish()
+            } else {
+                val userName = userPreferences.userName.first()
+                binding.tvWelcome.text = getString(R.string.welcome_home, userName)
+            }
         }
 
         binding.btnLogout.setOnClickListener {
@@ -61,6 +69,7 @@ class HomeFragment : Fragment() {
         return root
     }
 
+    @SuppressLint("Recycle")
     private fun getListPlants(): ArrayList<Plant> {
         val dataName = resources.getStringArray(R.array.plant_name)
         val dataImage = resources.obtainTypedArray(R.array.data_photo)

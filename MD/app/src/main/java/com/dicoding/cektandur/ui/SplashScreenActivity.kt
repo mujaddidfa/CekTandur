@@ -1,5 +1,6 @@
 package com.dicoding.cektandur.ui
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -12,6 +13,7 @@ import com.dicoding.cektandur.ui.welcome.WelcomeActivity
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 
+@SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
     private lateinit var userPreferences: UserPreferences
 
@@ -23,14 +25,13 @@ class SplashScreenActivity : AppCompatActivity() {
 
         Handler(Looper.getMainLooper()).postDelayed({
             lifecycleScope.launch {
-                val userId = userPreferences.userId.first()
-                if (userId == null) {
-                    val intent = Intent(this@SplashScreenActivity, WelcomeActivity::class.java)
-                    startActivity(intent)
+                val isLogin = userPreferences.isLogin.first()
+                val intent = if (isLogin) {
+                    Intent(this@SplashScreenActivity, MainActivity::class.java)
                 } else {
-                    val intent = Intent(this@SplashScreenActivity, MainActivity::class.java)
-                    startActivity(intent)
+                    Intent(this@SplashScreenActivity, WelcomeActivity::class.java)
                 }
+                startActivity(intent)
                 finish()
             }
         }, 4000)

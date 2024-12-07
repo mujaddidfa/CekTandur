@@ -63,6 +63,7 @@ class LoginActivity : AppCompatActivity() {
                             lifecycleScope.launch {
                                 userPreferences.saveUserId(data.userId ?: "")
                                 userPreferences.saveUserName(data.name ?: "")
+                                userPreferences.setLoginStatus(true)
                                 navigateToMainActivity()
                             }
                         }
