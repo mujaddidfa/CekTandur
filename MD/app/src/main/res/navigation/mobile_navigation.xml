@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_scan"
-        android:name="com.dicoding.cektandur.ui.ui.dashboard.DashboardFragment"
+        android:name="com.dicoding.cektandur.ui.scan.ScanFragment"
         android:label="@string/title_scan"
         tools:layout="@layout/activity_camera" />
 
     <fragment
         android:id="@+id/navigation_account"
-        android:name="com.dicoding.cektandur.ui.ui.profile.ProfileFragment"
+        android:name="com.dicoding.cektandur.ui.profile.ProfileFragment"
         android:label="@string/title_account"
         tools:layout="@layout/fragment_profile" />
 </navigation>

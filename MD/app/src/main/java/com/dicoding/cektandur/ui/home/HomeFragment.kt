@@ -63,6 +63,7 @@ class HomeFragment : Fragment() {
         rvPlant.setHasFixedSize(true)
         rvPlant.layoutManager = GridLayoutManager(context, 2)
 
+        list.clear()
         list.addAll(getListPlants())
         rvPlant.adapter = PlantAdapter(list)
 

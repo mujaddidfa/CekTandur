@@ -22,6 +22,7 @@ class PlantAdapter(private val listPlant: ArrayList<Plant>) : RecyclerView.Adapt
         holder.tvPlantName.text = name
         holder.ivPlantImage.setImageResource(image)
     }
+
     class PlantViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvPlantName: TextView = itemView.findViewById(R.id.tv_plant_name)
         val ivPlantImage: ImageView = itemView.findViewById(R.id.iv_plant_image)

@@ -25,6 +25,9 @@
     <string name="riwayat">Riwayat</string>
     <string name="plant_name">Nama Tanaman</string>
     <string name="logout">Logout</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="analyze">Analyze</string>
 
     <string-array name="plant_name">
         <item>Anggur</item>
@@ -42,4 +45,8 @@
         <item>@drawable/potato</item>
     </integer-array>
 
+    <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
+    <string name="result">Hasil Analisis</string>
+    <string name="save">Simpan</string>
+    <string name="result_text">%1$s %2$d%%</string>
 </resources>
