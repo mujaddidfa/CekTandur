@@ -50,19 +50,11 @@ class HomeFragment : Fragment() {
             }
         }
 
-        binding.btnLogout.setOnClickListener {
-            lifecycleScope.launch {
-                userPreferences.clearSession()
-                val intent = Intent(activity, LoginActivity::class.java)
-                startActivity(intent)
-                activity?.finish()
-            }
-        }
-
         rvPlant = binding.rvPlants
         rvPlant.setHasFixedSize(true)
         rvPlant.layoutManager = GridLayoutManager(context, 2)
 
+        list.clear()
         list.addAll(getListPlants())
         rvPlant.adapter = PlantAdapter(list)
 
