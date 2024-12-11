@@ -48,5 +48,15 @@
     <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
     <string name="result">Hasil Analisis</string>
     <string name="save">Simpan</string>
-    <string name="result_text">%1$s %2$d%%</string>
+    <string name="plant_disease">%1$s %2$d%%</string>
+    <string name="disease_description">Deskripsi Penyakit</string>
+    <string name="causes">Penyebab</string>
+    <string name="list_causes">Penyebab Penyakit</string>
+    <string name="solution">Solusi</string>
+    <string name="list_solution">Solusi penaganan</string>
+    <string name="product_recommendation_head">Rekomendasi Produk</string>
+    <string name="list_product_recommendation">Rekomendasi Produk</string>
+    <string name="back">Kembali</string>
+    <string name="product_name">Nama Produk</string>
+    <string name="product_link">Link Produk</string>
 </resources>
