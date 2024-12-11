@@ -26,9 +26,31 @@
             android:text="Penyakit kekeringan"
             android:textSize="18sp"
             android:textStyle="bold" />
+        <TextView
+            android:id="@+id/confidence_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16%"
+            />
 
         <TextView
             android:id="@+id/penjelasan_disease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/tv_causes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/yellow"
+            android:text="Penyebab" />
+
+        <TextView
+            android:id="@+id/isi_causes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
@@ -67,13 +89,19 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
             android:text="TextView" />
+        <TextView
+            android:id="@+id/link_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="TextView" />
 
         <Button
             android:id="@+id/btn_save"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
             android:textSize="20sp"
             android:text="Simpan" />
 
@@ -81,8 +109,8 @@
             android:id="@+id/btn_back"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
             android:textSize="20sp"
             android:text="Kembali" />
     </LinearLayout>

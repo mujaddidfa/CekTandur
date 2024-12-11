@@ -8,6 +8,7 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.dicoding.cektandur.databinding.ActivityRegisterBinding
 import com.dicoding.cektandur.ui.RegisterViewModelFactory
@@ -53,7 +54,18 @@ class RegisterActivity : AppCompatActivity() {
                     is Result.Loading -> showLoading(true)
                     is Result.Success -> {
                         showLoading(false)
-                        Toast.makeText(this, result.data.message, Toast.LENGTH_SHORT).show()
+                        AlertDialog.Builder(this).apply {
+                            setTitle("Berhasil!")
+                            setMessage("Akun anda telah berhasil dibuat")
+                            setPositiveButton("Login") { _, _ ->
+                                val intent =
+                                    Intent(this@RegisterActivity, LoginActivity::class.java)
+                                startActivity(intent)
+                                finish()
+                            }
+                            create()
+                            show()
+                        }
                     }
 
                     is Result.Error -> {

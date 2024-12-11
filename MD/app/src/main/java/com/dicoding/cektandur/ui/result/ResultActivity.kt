@@ -32,6 +32,8 @@ class ResultActivity : AppCompatActivity() {
             binding.isiSolution.text = plantItem.plant.treatments.joinToString(", ")
             binding.isiProduct.text = plantItem.plant.alternativeProducts.joinToString(", ")
             binding.ivPlantDisease.setImageURI(Uri.parse(imageUri))
+            binding.tvCauses.text = plantItem.plant.causes
+            binding.linkProduct.text = plantItem.plant.alternativeProductsLinks.joinToString(", ")
         }
     }
 }
