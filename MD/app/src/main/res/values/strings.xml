@@ -28,6 +28,7 @@
     <string name="gallery">Gallery</string>
     <string name="camera">Camera</string>
     <string name="analyze">Analyze</string>
+    <string name="riwayatscan">Riwayat Scan</string>
 
     <string-array name="plant_name">
         <item>Anggur</item>

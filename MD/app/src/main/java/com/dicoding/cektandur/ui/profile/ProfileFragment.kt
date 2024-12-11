@@ -52,6 +52,11 @@ class ProfileFragment : Fragment() {
                 activity?.finish()
             }
         }
+
+        binding.btn_historyscan.setOnClickListener {
+            val intent = Intent(requireContext(), HistoryActivity::class.java)
+            startActivity(intent)
+        }
         return binding.root
 
     }
