@@ -15,7 +15,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField("String", "BASE_URL", "\"https://backend-image-985874150758.asia-southeast2.run.app/\"")
+        buildConfigField("String", "BASE_URL", "\"https://backend-bangkit-image-985874150758.asia-southeast2.run.app\"")
     }
 
     buildTypes {

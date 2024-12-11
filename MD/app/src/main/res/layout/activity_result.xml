@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ResultActivity">
+    tools:context=".ui.result.ResultActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,24 +11,79 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/iv_result"
+            android:id="@+id/iv_plant_disease"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/ic_place_holder"/>
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
 
         <TextView
-            android:id="@+id/tv_result"
+            android:id="@+id/tv_disease_cause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@font/montserrat_bold"
+            android:layout_gravity="center"
+            android:text="Penyakit kekeringan"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/penjelasan_disease"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="@string/result" />
+            android:layout_marginTop="14dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/yellow"
+            android:text="Solusi" />
+
+        <TextView
+            android:id="@+id/isi_solution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_product_recommendation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/yellow"
+            android:text="Rekomendasi Produk" />
+
+        <TextView
+            android:id="@+id/isi_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="TextView" />
 
         <Button
             android:id="@+id/btn_save"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="@string/save" />
+            android:layout_height="64dp"
+            android:textSize="20sp"
+            android:text="Simpan" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:textSize="20sp"
+            android:text="Kembali" />
     </LinearLayout>
 </ScrollView>

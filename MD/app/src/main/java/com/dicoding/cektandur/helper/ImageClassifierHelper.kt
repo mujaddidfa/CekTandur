@@ -19,13 +19,13 @@ class ImageClassifierHelper(
 ) {
     private lateinit var model: FinalCektandur
     private val labels = listOf(
-        "Anggur_Bercak_daun_isariopsis", "AnggurEsca(campak_hitam)", "AnggurHitam_busuk", "AnggurSehat",
-        "ApelBusuk_hitam", "ApelKarat_apel_cedar", "ApelKeropeng_apel", "ApelSehat",
-        "JagungBercak_daun_abu-abu", "JagungBusuk_daun", "JagungKarat_umum", "JagungSehat",
-        "KentangBusuk_daun_dini", "KentangBusuk_daun_telat", "KentangSehat",
-        "TomatBercak_bakteri", "TomatBercak_daun", "TomatBercak_target", "TomatBusuk_daun_dini",
-        "TomatBusuk_daun_telat", "TomatDaun_keriting_kuning", "TomatJamur_septoria_lycopersici",
-        "TomatSehat", "TomatTungau_laba-laba_Berbintik", "Tomat_Virus_mosaik_tomat"
+        1, 2, 3, 4,
+        5, 6, 7, 8,
+        9, 10, 11, 12,
+        13, 14, 15, 16,
+        17, 18, 19, 20,
+        21, 22, 23, 24,
+        25
     )
 
     init {
@@ -72,10 +72,8 @@ class ImageClassifierHelper(
             inputFeature0.loadBuffer(processedImage.buffer)
 
             // Perform inference
-            val startTime = System.currentTimeMillis()
             val outputs = model.process(inputFeature0)
             val outputFeature0 = outputs.outputFeature0AsTensorBuffer
-            val inferenceTime = System.currentTimeMillis() - startTime
 
             val outputArray = outputFeature0.floatArray
             Log.d(TAG, "Output Array: ${outputArray.joinToString()}")
@@ -86,7 +84,7 @@ class ImageClassifierHelper(
             val confidenceScore = outputArray[maxIndex]
 
             // Notify the listener with results
-            classifierListener?.onResults(predictedLabel, confidenceScore, inferenceTime)
+            classifierListener?.onResults(predictedLabel, confidenceScore)
         } catch (e: IOException) {
             classifierListener?.onError("Failed to classify the image")
             Log.e(TAG, "Image classification error: ${e.message}")
@@ -105,9 +103,8 @@ class ImageClassifierHelper(
     interface ClassifierListener {
         fun onError(error: String)
         fun onResults(
-            predictedLabel: String,
-            confidenceScore: Float,
-            inferenceTime: Long
+            predictedIdClass: Int,
+            confidenceScore: Float
         )
     }
 

@@ -19,7 +19,7 @@ import androidx.fragment.app.viewModels
 import com.dicoding.cektandur.R
 import com.dicoding.cektandur.databinding.FragmentScanBinding
 import com.dicoding.cektandur.helper.ImageClassifierHelper
-import com.dicoding.cektandur.ui.ResultActivity
+import com.dicoding.cektandur.ui.result.ResultActivity
 import com.dicoding.cektandur.utils.generateUniqueFileName
 import com.dicoding.cektandur.utils.getImageUri
 import com.yalantis.ucrop.UCrop
@@ -75,10 +75,10 @@ class ScanFragment : Fragment() {
                     showToast(error)
                 }
 
-                override fun onResults(predictedLabel: String, confidenceScore: Float, inferenceTime: Long) {
+                override fun onResults(predictedIdClass: Int, confidenceScore: Float) {
                     // debug
-                    Log.d("Prediction", "Predicted label: $predictedLabel")
-                    moveToResult(predictedLabel, confidenceScore, viewModel.currentImageUri.value!!)
+                    Log.d("Prediction", "Predicted label: $predictedIdClass")
+                    moveToResult(predictedIdClass, confidenceScore, viewModel.currentImageUri.value!!)
                 }
             }
         )
@@ -160,9 +160,9 @@ class ScanFragment : Fragment() {
         } ?: showToast(getString(R.string.empty_image_warning))
     }
 
-    private fun moveToResult(predictedLabel: String, confidenceScore: Float, imageUri: Uri) {
+    private fun moveToResult(predictedIdClass: Int, confidenceScore: Float, imageUri: Uri) {
         val intent = Intent(requireContext(), ResultActivity::class.java).apply {
-            putExtra("PREDICTION", predictedLabel)
+            putExtra("PREDICTION", predictedIdClass)
             putExtra("CONFIDENCE_SCORE", confidenceScore)
             putExtra("IMAGE_URI", imageUri.toString())
         }
