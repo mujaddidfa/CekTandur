@@ -19,7 +19,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_scan">Scan</string>
-    <string name="title_account">Account</string>
+    <string name="title_account">Anda</string>
     <string name="welcome_home">Selamat Datang, %1$s</string>
     <string name="about_plant">Tentang Tanaman</string>
     <string name="riwayat">Riwayat</string>
@@ -28,6 +28,7 @@
     <string name="gallery">Gallery</string>
     <string name="camera">Camera</string>
     <string name="analyze">Analyze</string>
+    <string name="riwayatscan">Riwayat Scan</string>
 
     <string-array name="plant_name">
         <item>Anggur</item>
