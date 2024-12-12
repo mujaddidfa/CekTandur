@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const plantController = require('../controllers/plantController');
+const { getAllPlants, getPlantById} = require('../controllers/plantController');
 
-router.get('/', plantController.getAllPlants);
-router.get('/:class', plantController.getPlantByClass);
+router.get('/', getAllPlants);
+router.get('/:idPlant', getPlantById);
 
 module.exports = router;
