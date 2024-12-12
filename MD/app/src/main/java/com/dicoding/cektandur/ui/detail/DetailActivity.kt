@@ -12,7 +12,14 @@ class DetailActivity : AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val adapter = DetailPagerAdapter(supportFragmentManager)
+        val plantDescription = intent.getStringExtra("PLANT_DESCRIPTION")
+        val plantCover = intent.getIntExtra("PLANT_COVER", -1)
+
+        if (plantCover != -1) {
+            binding.ivCover.setImageResource(plantCover)
+        }
+
+        val adapter = DetailPagerAdapter(supportFragmentManager, plantDescription)
         binding.viewPager.adapter = adapter
         binding.tabLayout.setupWithViewPager(binding.viewPager)
     }

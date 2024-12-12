@@ -38,12 +38,28 @@
         <item>Kentang</item>
     </string-array>
 
+    <string-array name="plant_description">
+        <item>Anggur</item>
+        <item>Apel adalah tanaman buah yang berasal dari Asia Tengah dan kini dibudidayakan secara luas di seluruh dunia. Buah apel memiliki bentuk bulat atau lonjong dengan kulit tipis yang berwarna merah, hijau, atau kuning, serta daging buah yang renyah dan berair.\nApel tumbuh subur di daerah beriklim sedang, dengan tanah yang subur dan drainase yang baik. Pohon apel berukuran kecil hingga sedang, memiliki bunga putih atau merah muda yang indah sebelum buah mulai berkembang.\nTerdapat ribuan varietas apel, seperti Granny Smith, Fuji, dan Red Delicious, yang masing-masing memiliki rasa dan tekstur unik. Apel kaya akan serat, vitamin C, dan antioksidan yang baik untuk kesehatan pencernaan, menjaga kesehatan jantung, dan meningkatkan daya tahan tubuh.</item>
+        <item>Jagung adalah tanaman biji-bijian yang berasal dari Amerika Tengah dan telah menjadi salah satu sumber makanan pokok di dunia. Tanaman ini tumbuh dalam bentuk batang tinggi dengan daun panjang yang melindungi tongkol jagung tempat biji-bijian berkembang.\nJagung tumbuh optimal di daerah beriklim hangat, dengan tanah yang subur dan cukup air. Tongkolnya dilapisi oleh kelobot yang melindungi biji jagung hingga matang.\nJagung memiliki berbagai varietas, seperti jagung manis untuk konsumsi langsung dan jagung pipil untuk bahan olahan. Kandungan karbohidrat, serat, dan vitamin B dalam jagung menjadikannya sumber energi penting bagi tubuh. Jagung juga digunakan untuk makanan, pakan ternak, hingga bahan baku bioetanol.</item>
+        <item>Tomat adalah tanaman buah yang berasal dari Amerika Selatan dan sering digunakan sebagai bahan sayuran dalam berbagai hidangan. Buah tomat berbentuk bulat hingga oval, dengan kulit halus berwarna hijau saat muda dan merah, oranye, atau kuning ketika matang.\nTanaman tomat tumbuh subur di daerah beriklim hangat, dengan tanah subur dan cukup sinar matahari. Batangnya dapat berdiri tegak atau merambat dengan dukungan.\nTomat memiliki berbagai varietas, seperti tomat ceri, tomat plum, dan tomat beefsteak. Buah ini kaya akan likopen, vitamin C, dan kalium, yang bermanfaat untuk kesehatan kulit, mata, dan jantung. Tomat banyak digunakan dalam salad, sup, saus, hingga jus.</item>
+        <item>Kentang adalah tanaman umbi-umbian yang berasal dari wilayah pegunungan Andes di Amerika Selatan. Umbinya tumbuh di bawah tanah dan memiliki kulit berwarna cokelat, kuning, atau ungu, dengan daging umbi berwarna putih hingga kuning.\nTanaman kentang tumbuh baik di daerah beriklim dingin hingga sedang, dengan tanah gembur dan subur. Daunnya majemuk, dan bunganya kecil dengan warna putih hingga ungu.\nKentang memiliki banyak varietas, seperti kentang russet dan kentang merah, yang berbeda tekstur dan penggunaannya. Umbi ini kaya akan karbohidrat, vitamin C, vitamin B6, dan potasium, sehingga menjadi sumber energi yang penting. Kentang sering diolah menjadi makanan seperti kentang goreng, sup, dan kentang tumbuk.</item>
+    </string-array>
+
     <integer-array name="data_photo">
         <item>@drawable/grapes</item>
         <item>@drawable/red_apple</item>
         <item>@drawable/ear_of_corn</item>
         <item>@drawable/tomato</item>
         <item>@drawable/potato</item>
+    </integer-array>
+
+    <integer-array name="image_cover">
+        <item>@drawable/grapes_cover</item>
+        <item>@drawable/apple_cover</item>
+        <item>@drawable/corn_cover</item>
+        <item>@drawable/tomato_cover</item>
+        <item>@drawable/potato_cover</item>
     </integer-array>
 
     <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
@@ -64,4 +80,7 @@
     <string name="date">Tanggal</string>
     <string name="disease_name">Nama Penyakit</string>
     <string name="username">Username</string>
+    <string name="plant_description">Deskripsi tanaman</string>
+    <string name="about">Tentang</string>
+    <string name="diseases">Jenis Penyakit</string>
 </resources>

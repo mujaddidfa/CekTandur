@@ -27,6 +27,8 @@ class PlantAdapter(private val listPlant: ArrayList<Plant>) : RecyclerView.Adapt
             val context = holder.itemView.context
             val intent = Intent(context, DetailActivity::class.java)
             intent.putExtra("PLANT_NAME", name)
+            intent.putExtra("PLANT_DESCRIPTION", context.resources.getStringArray(R.array.plant_description)[position])
+            intent.putExtra("PLANT_COVER", context.resources.obtainTypedArray(R.array.image_cover).getResourceId(position, -1))
             context.startActivity(intent)
         }
     }

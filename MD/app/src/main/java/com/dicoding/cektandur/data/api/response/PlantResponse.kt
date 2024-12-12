@@ -1,6 +1,8 @@
 package com.dicoding.cektandur.data.api.response
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
 data class PlantResponse(
 
@@ -14,6 +16,7 @@ data class PlantResponse(
 	val message: String? = null
 )
 
+@Parcelize
 data class PlantsItem(
 
 	@field:SerializedName("alternative_products_links")
@@ -39,4 +42,4 @@ data class PlantsItem(
 
 	@field:SerializedName("alternative_products")
 	val alternativeProducts: List<String?>? = null
-)
+) : Parcelable
