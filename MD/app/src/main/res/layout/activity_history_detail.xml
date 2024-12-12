@@ -11,6 +11,12 @@
         android:paddingBottom="24dp"
         android:orientation="vertical">
 
+        <ImageView
+            android:id="@+id/iv_plant"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop" />
+
         <TextView
             android:id="@+id/tv_plant_disease"
             android:layout_width="wrap_content"
