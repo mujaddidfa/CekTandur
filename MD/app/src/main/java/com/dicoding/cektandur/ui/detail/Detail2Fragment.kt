@@ -5,17 +5,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.lifecycleScope
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.cektandur.data.api.ApiConfig
+import com.dicoding.cektandur.data.repository.PlantRepository
 import com.dicoding.cektandur.databinding.FragmentDetail2Binding
-import kotlinx.coroutines.launch
 
 class Detail2Fragment : Fragment() {
 
     private var _binding: FragmentDetail2Binding? = null
     private val binding get() = _binding!!
-    private val apiService = ApiConfig.getApiService()
+    private val viewModel: DetailViewModel by viewModels {
+        DetailViewModelFactory(PlantRepository(ApiConfig.getApiService()))
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,15 +34,12 @@ class Detail2Fragment : Fragment() {
     }
 
     private fun fetchDiseases() {
-        lifecycleScope.launch {
-            try {
-                val response = apiService.getAllPlants()
-                val plantId = arguments?.getInt("PLANT_ID") ?: return@launch
-                val filteredDiseases = response.plants?.filter { it?.idPlant in getPlantIdRange(plantId) }?.filterNotNull() ?: emptyList()
-                binding.recyclerView.adapter = DiseaseAdapter(filteredDiseases)
-            } catch (e: Exception) {
-                e.printStackTrace()
-            }
+        val plantId = arguments?.getInt("PLANT_ID") ?: return
+        viewModel.getAllPlants().observe(viewLifecycleOwner) { plants ->
+            val filteredDiseases =
+                plants?.filter { it?.idPlant in getPlantIdRange(plantId) }?.filterNotNull()
+                    ?: emptyList()
+            binding.recyclerView.adapter = DiseaseAdapter(filteredDiseases)
         }
     }
 
