@@ -4,6 +4,6 @@ data class HistoryRequest(
     val userId: String,
     val className: String,
     val diseaseName: String,
-    val analysisResult: String,
-    val confidence: Float
+    val confidence: Float,
+    val plantImage: String
 )

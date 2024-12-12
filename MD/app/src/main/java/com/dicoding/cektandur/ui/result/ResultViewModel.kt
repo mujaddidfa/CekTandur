@@ -9,6 +9,8 @@ import com.dicoding.cektandur.data.api.response.PlantItemResponse
 import com.dicoding.cektandur.data.repository.HistoryRepository
 import com.dicoding.cektandur.data.repository.PlantRepository
 import kotlinx.coroutines.launch
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 
 class ResultViewModel(
     private val plantRepository: PlantRepository,
@@ -25,9 +27,15 @@ class ResultViewModel(
         }
     }
 
-    fun addHistory(historyRequest: HistoryRequest) {
+    fun addHistory(
+        userId: RequestBody,
+        className: RequestBody,
+        diseaseName: RequestBody,
+        confidence: RequestBody,
+        plantImage: MultipartBody.Part
+    ) {
         viewModelScope.launch {
-            historyRepository.addHistory(historyRequest)
+            historyRepository.addHistory(userId, className, diseaseName, confidence, plantImage)
         }
     }
 }

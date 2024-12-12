@@ -14,8 +14,13 @@ import com.dicoding.cektandur.data.api.request.HistoryRequest
 import com.dicoding.cektandur.data.pref.UserPreferences
 import com.dicoding.cektandur.databinding.ActivityResultBinding
 import com.dicoding.cektandur.di.Injection
+import com.dicoding.cektandur.utils.uriToFile
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.MultipartBody
+import okhttp3.RequestBody.Companion.asRequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
 import retrofit2.HttpException
 
 class ResultActivity : AppCompatActivity() {
@@ -70,45 +75,49 @@ class ResultActivity : AppCompatActivity() {
             setMessage("Tersimpan di history")
             setPositiveButton("Ok") { dialog, _ ->
                 dialog.dismiss()
-                saveHistory(confidenceScore)
+                saveHistory(confidenceScore, imageUri)
             }
         }.show()
     }
         binding.btnBack.setOnClickListener {
-            // This will finish the current activity and return to the previous fragment (ScanFragment)
             finish()
         }
     }
 
-    private fun saveHistory(confidenceScore: Float) {
+    private fun saveHistory(confidenceScore: Float, imageUri: String?) {
         var className = ""
-        var plantName = ""
-        var analysisResult = ""
+        var diseaseName = ""
 
         viewModel.plantItem.observe(this) { plantItem ->
             className = plantItem.plant.className
-            plantName = plantItem.plant.diseaseName
-            analysisResult = plantItem.plant.description
+            diseaseName = plantItem.plant.diseaseName
         }
 
         lifecycleScope.launch {
             try {
                 val userId = userPreferences.userId.first() ?: return@launch
+                val file = uriToFile(Uri.parse(imageUri), this@ResultActivity)
+                val requestImageFile = file.asRequestBody("image/jpeg".toMediaTypeOrNull())
+                val plantImage = MultipartBody.Part.createFormData("plantImage", file.name, requestImageFile)
 
-                val historyRequest = HistoryRequest(
-                    userId = userId,
-                    className = className,
-                    diseaseName = plantName,
-                    analysisResult = analysisResult,
-                    confidence = confidenceScore
-                )
+                val userIdBody = userId.toRequestBody("text/plain".toMediaTypeOrNull())
+                val classNameBody = className.toRequestBody("text/plain".toMediaTypeOrNull())
+                val diseaseNameBody = diseaseName.toRequestBody("text/plain".toMediaTypeOrNull())
+                val confidenceBody = confidenceScore.toString().toRequestBody("text/plain".toMediaTypeOrNull())
 
-                viewModel.addHistory(historyRequest)
+                Log.d("ResultActivity", "className: $className, diseaseName: $diseaseName")
+
+                viewModel.addHistory(userIdBody, classNameBody, diseaseNameBody, confidenceBody, plantImage)
                 Toast.makeText(this@ResultActivity, "Data successfully saved to history", Toast.LENGTH_SHORT).show()
 
             } catch (e: HttpException) {
-                Log.e("ResultActivity", "HTTP error: ${e.code()} - ${e.message()}")
-                Toast.makeText(this@ResultActivity, "Failed to save history: ${e.message()}", Toast.LENGTH_SHORT).show()
+                if (e.code() == 404) {
+                    Log.e("ResultActivity", "Endpoint not found: ${e.message()}")
+                    Toast.makeText(this@ResultActivity, "Failed to save history: Endpoint not found", Toast.LENGTH_SHORT).show()
+                } else {
+                    Log.e("ResultActivity", "HTTP error: ${e.code()} - ${e.message()}")
+                    Toast.makeText(this@ResultActivity, "Failed to save history: ${e.message()}", Toast.LENGTH_SHORT).show()
+                }
             } catch (e: Exception) {
                 Log.e("ResultActivity", "Unexpected error: ${e.message}")
                 Toast.makeText(this@ResultActivity, "An unexpected error occurred", Toast.LENGTH_SHORT).show()
