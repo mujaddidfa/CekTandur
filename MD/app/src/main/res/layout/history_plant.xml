@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="12dp"
-    android:layout_margin="12dp"
-    android:layout_height="95dp">
+    android:layout_margin="12dp">
 
     <LinearLayout
         android:layout_marginVertical="3dp"
@@ -14,20 +14,21 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/namaPenyakit"
+            android:id="@+id/tv_plant_disease"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="nama penyakit"
+            android:text="@string/disease_name"
             android:textStyle="bold"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:textSize="20sp"/>
 
         <TextView
-            android:id="@+id/date"
+            android:id="@+id/tv_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="22-01-1990"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/date"
             android:textSize="16sp"/>
     </LinearLayout>
 
