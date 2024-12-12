@@ -1,4 +1,4 @@
-package com.dicoding.cektandur.ui
+package com.dicoding.cektandur.ui.history
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.dicoding.cektandur.data.api.response.DataItem
 import com.dicoding.cektandur.databinding.HistoryPlantBinding
-import com.dicoding.cektandur.ui.history.HistoryDetailActivity
 import java.text.SimpleDateFormat
 import java.util.Locale
 

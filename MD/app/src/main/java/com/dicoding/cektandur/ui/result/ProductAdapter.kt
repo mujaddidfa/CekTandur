@@ -1,4 +1,4 @@
-package com.dicoding.cektandur.ui
+package com.dicoding.cektandur.ui.result
 
 import android.content.Context
 import android.content.Intent

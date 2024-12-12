@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.dicoding.cektandur.R
 import com.dicoding.cektandur.data.pref.UserPreferences
 import com.dicoding.cektandur.databinding.FragmentHomeBinding
-import com.dicoding.cektandur.ui.PlantAdapter
 import com.dicoding.cektandur.ui.login.LoginActivity
 import com.dicoding.cektandur.utils.Plant
 import kotlinx.coroutines.flow.first

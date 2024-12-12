@@ -63,4 +63,5 @@
     <string name="analysis_date">Dianalisis pada tanggal: %1$s</string>
     <string name="date">Tanggal</string>
     <string name="disease_name">Nama Penyakit</string>
+    <string name="username">Username</string>
 </resources>

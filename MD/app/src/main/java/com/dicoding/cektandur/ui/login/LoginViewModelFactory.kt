@@ -1,10 +1,9 @@
-package com.dicoding.cektandur.ui
+package com.dicoding.cektandur.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.cektandur.data.repository.AuthRepository
 import com.dicoding.cektandur.di.Injection
-import com.dicoding.cektandur.ui.login.LoginViewModel
 
 class LoginViewModelFactory(private val repository: AuthRepository) : ViewModelProvider.NewInstanceFactory() {
     @Suppress("UNCHECKED_CAST")

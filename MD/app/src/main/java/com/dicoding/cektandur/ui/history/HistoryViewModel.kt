@@ -16,7 +16,7 @@ class HistoryViewModel(private val historyRepository: HistoryRepository) : ViewM
     fun getHistory(userId: String) {
         viewModelScope.launch {
             val response = historyRepository.getHistory(userId)
-            _historyList.value = (response.data ?: emptyList()) as List<DataItem>?
+            _historyList.value = response.data?.filterNotNull() ?: emptyList()
         }
     }
 }

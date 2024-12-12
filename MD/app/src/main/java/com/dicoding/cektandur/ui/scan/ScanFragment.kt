@@ -76,8 +76,6 @@ class ScanFragment : Fragment() {
                 }
 
                 override fun onResults(predictedIdClass: Int, confidenceScore: Float) {
-                    // debug
-                    Log.d("Prediction", "Predicted label: $predictedIdClass")
                     moveToResult(predictedIdClass, confidenceScore, viewModel.currentImageUri.value!!)
                 }
             }

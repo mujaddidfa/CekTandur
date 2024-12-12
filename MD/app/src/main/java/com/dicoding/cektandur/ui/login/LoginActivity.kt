@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.dicoding.cektandur.data.pref.UserPreferences
 import com.dicoding.cektandur.databinding.ActivityLoginBinding
-import com.dicoding.cektandur.ui.LoginViewModelFactory
 import com.dicoding.cektandur.ui.MainActivity
 import com.dicoding.cektandur.ui.register.RegisterActivity
 import com.dicoding.cektandur.utils.Result

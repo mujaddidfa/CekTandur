@@ -11,7 +11,6 @@ import com.dicoding.cektandur.data.api.request.HistoryRequest
 import com.dicoding.cektandur.data.pref.UserPreferences
 import com.dicoding.cektandur.databinding.ActivityResultBinding
 import com.dicoding.cektandur.di.Injection
-import com.dicoding.cektandur.ui.ProductAdapter
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 

@@ -11,7 +11,6 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.dicoding.cektandur.databinding.ActivityRegisterBinding
-import com.dicoding.cektandur.ui.RegisterViewModelFactory
 import com.dicoding.cektandur.ui.login.LoginActivity
 import com.dicoding.cektandur.utils.Result
 

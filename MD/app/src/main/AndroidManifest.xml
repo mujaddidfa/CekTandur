@@ -25,7 +25,7 @@
         <activity
             android:name=".ui.history.HistoryDetailActivity"
             android:exported="false"
-            android:parentActivityName=".ui.history.historyActivity"/>
+            android:parentActivityName=".ui.history.HistoryActivity"/>
         <activity
             android:name=".ui.history.HistoryActivity"
             android:exported="false" />
@@ -78,5 +78,4 @@
                 android:resource="@xml/file_paths" />
         </provider>
     </application>
-
 </manifest>

@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.cektandur.data.pref.UserPreferences
 import com.dicoding.cektandur.databinding.ActivityHistoryBinding
 import com.dicoding.cektandur.di.Injection
-import com.dicoding.cektandur.ui.HistoryAdapter
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 

@@ -1,4 +1,4 @@
-package com.dicoding.cektandur.ui
+package com.dicoding.cektandur.ui.home
 
 import android.content.Intent
 import android.view.LayoutInflater
