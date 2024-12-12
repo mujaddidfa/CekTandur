@@ -27,7 +27,7 @@
             android:exported="false"
             android:parentActivityName=".ui.history.historyActivity"/>
         <activity
-            android:name=".ui.history.historyActivity"
+            android:name=".ui.history.HistoryActivity"
             android:exported="false" />
         <activity
             android:name=".ui.detail.DetailActivity"

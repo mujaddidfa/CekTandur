@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import com.dicoding.cektandur.data.pref.UserPreferences
 import com.dicoding.cektandur.databinding.FragmentProfileBinding
+import com.dicoding.cektandur.ui.history.HistoryActivity
 import com.dicoding.cektandur.ui.login.LoginActivity
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
@@ -53,7 +54,7 @@ class ProfileFragment : Fragment() {
             }
         }
 
-        binding.btn_historyscan.setOnClickListener {
+        binding.btnHistoryscan.setOnClickListener {
             val intent = Intent(requireContext(), HistoryActivity::class.java)
             startActivity(intent)
         }
