@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.dicoding.cektandur.data.repository.HistoryRepository
 import com.dicoding.cektandur.data.repository.PlantRepository
 
+@Suppress("UNCHECKED_CAST")
 class ResultViewModelFactory(
     private val plantRepository: PlantRepository,
     private val historyRepository: HistoryRepository

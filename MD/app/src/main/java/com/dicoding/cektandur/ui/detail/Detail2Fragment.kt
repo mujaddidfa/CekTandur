@@ -41,7 +41,9 @@ class Detail2Fragment : Fragment() {
             return
         }
         Log.d("Detail2Fragment", "PLANT_ID: $plantId")
+        binding.progressBar.visibility = View.VISIBLE
         viewModel.getAllPlants().observe(viewLifecycleOwner) { plants ->
+            binding.progressBar.visibility = View.GONE
             val filteredDiseases = plants?.filter { it?.idPlant in getPlantIdRange(plantId) }?.filterNotNull() ?: emptyList()
             if (filteredDiseases.isEmpty()) {
                 Log.d("Detail2Fragment", "No diseases found for plant ID: $plantId")

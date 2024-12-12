@@ -73,9 +73,11 @@ class ScanFragment : Fragment() {
             classifierListener = object : ImageClassifierHelper.ClassifierListener {
                 override fun onError(error: String) {
                     showToast(error)
+                    viewModel.setLoading(false)
                 }
 
                 override fun onResults(predictedIdClass: Int, confidenceScore: Float) {
+                    viewModel.setLoading(false)
                     moveToResult(predictedIdClass, confidenceScore, viewModel.currentImageUri.value!!)
                 }
             }
