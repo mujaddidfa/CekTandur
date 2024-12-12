@@ -23,8 +23,10 @@ class ProductAdapter(private val context: Context, private val products: List<Pa
         holder.tvProductName.text = name
         holder.tvProductLink.text = context.getString(R.string.product_link)
         holder.tvProductLink.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(link))
-            context.startActivity(intent)
+            if (link.isNotEmpty()) {
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(link))
+                context.startActivity(intent)
+            }
         }
     }
 

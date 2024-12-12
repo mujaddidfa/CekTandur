@@ -16,11 +16,11 @@ data class GetHistoryResponse(
 
 data class DataItem(
 
+	@field:SerializedName("id")
+	val id: String? = null,
+
 	@field:SerializedName("confidence")
 	val confidence: String? = null,
-
-	@field:SerializedName("analysisResult")
-	val analysisResult: String? = null,
 
 	@field:SerializedName("className")
 	val className: String? = null,
@@ -32,5 +32,23 @@ data class DataItem(
 	val diseaseName: String? = null,
 
 	@field:SerializedName("timestamp")
-	val timestamp: String? = null
+	val timestamp: String? = null,
+
+	@field:SerializedName("description")
+	val description: String? = null,
+
+	@field:SerializedName("causes")
+	val causes: List<String?>? = null,
+
+	@field:SerializedName("treatments")
+	val treatments: List<String?>? = null,
+
+	@field:SerializedName("alternative_products")
+	val alternativeProducts: List<String?>? = null,
+
+	@field:SerializedName("alternative_products_links")
+	val alternativeProductsLinks: List<String?>? = null,
+
+	@field:SerializedName("imageUrl")
+	val imageUrl: String? = null
 )

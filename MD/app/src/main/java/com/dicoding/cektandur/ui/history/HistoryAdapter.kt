@@ -4,6 +4,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.dicoding.cektandur.data.api.response.DataItem
 import com.dicoding.cektandur.databinding.HistoryPlantBinding
 import java.text.SimpleDateFormat
@@ -15,12 +16,16 @@ class HistoryAdapter(private val historyList: List<DataItem>) : RecyclerView.Ada
         fun bind(history: DataItem) {
             binding.tvPlantDisease.text = history.diseaseName
 
-            val originalFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.getDefault())
+            val originalFormat = SimpleDateFormat("MM/dd/yyyy, h:mm:ss a", Locale.getDefault())
             val targetFormat = SimpleDateFormat("dd MMMM yyyy, HH:mm", Locale("id", "ID"))
             val date = history.timestamp?.let { originalFormat.parse(it) }
             val formattedDate = date?.let { targetFormat.format(it) }
 
             binding.tvDate.text = formattedDate
+
+            Glide.with(binding.root.context)
+                .load(history.imageUrl)
+                .into(binding.ivHistory)
 
             binding.root.setOnClickListener {
                 val context = binding.root.context
@@ -28,7 +33,12 @@ class HistoryAdapter(private val historyList: List<DataItem>) : RecyclerView.Ada
                     putExtra("diseaseName", history.diseaseName)
                     putExtra("timestamp", formattedDate)
                     putExtra("confidence", history.confidence)
-                    putExtra("analysisResult", history.analysisResult)
+                    putExtra("description", history.description)
+                    putExtra("causes", history.causes?.joinToString("\n - ", prefix = "\n - "))
+                    putExtra("treatments", history.treatments?.joinToString("\n - ", prefix = "\n - "))
+                    putExtra("alternativeProducts", history.alternativeProducts?.joinToString("\n - ", prefix = "\n - "))
+                    putExtra("alternativeProductsLinks", history.alternativeProductsLinks?.joinToString("\n - ", prefix = "\n - "))
+                    putExtra("imageUrl", history.imageUrl)
                 }
                 context.startActivity(intent)
             }

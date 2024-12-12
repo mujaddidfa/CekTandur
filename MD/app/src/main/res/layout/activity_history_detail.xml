@@ -85,6 +85,13 @@
             android:textColor="@color/yellow"
             android:text="@string/product_recommendation_head" />
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProductRecommendations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="24dp" />
+
         <TextView
             android:id="@+id/tv_timestap"
             android:layout_width="match_parent"

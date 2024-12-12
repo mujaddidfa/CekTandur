@@ -41,6 +41,6 @@ interface ApiService {
         @Part plantImage: MultipartBody.Part
     ): HistoryResponse
 
-    @GET("/api/plant/history/{userId}")
+    @GET("/api/users/history/{userId}")
     suspend fun getHistory(@Path("userId") userId: String): GetHistoryResponse
 }
