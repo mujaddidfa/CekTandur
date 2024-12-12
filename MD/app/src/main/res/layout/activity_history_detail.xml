@@ -22,7 +22,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginHorizontal="24dp"
             android:textAppearance="@font/montserrat_bold"
             android:layout_gravity="center"
             android:text="@string/plant_disease"
@@ -36,6 +35,55 @@
             android:layout_marginTop="14dp"
             android:layout_marginHorizontal="24dp"
             android:text="@string/disease_description" />
+
+        <TextView
+            android:id="@+id/tv_causes_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/yellow"
+            android:text="@string/causes" />
+
+        <TextView
+            android:id="@+id/tv_causes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="@string/list_causes" />
+
+        <TextView
+            android:id="@+id/tv_solution_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/yellow"
+            android:text="@string/solution" />
+
+        <TextView
+            android:id="@+id/tv_solution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="@string/list_solution" />
+
+        <TextView
+            android:id="@+id/tv_product_recommendation_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/yellow"
+            android:text="@string/product_recommendation_head" />
 
         <TextView
             android:id="@+id/tv_timestap"
