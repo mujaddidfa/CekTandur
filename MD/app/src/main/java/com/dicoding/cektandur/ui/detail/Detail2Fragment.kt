@@ -1,6 +1,7 @@
 package com.dicoding.cektandur.ui.detail
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,22 +35,30 @@ class Detail2Fragment : Fragment() {
     }
 
     private fun fetchDiseases() {
-        val plantId = arguments?.getInt("PLANT_ID") ?: return
+        val plantId = arguments?.getInt("PLANT_ID")
+        if (plantId == null) {
+            Log.e("Detail2Fragment", "PLANT_ID argument is missing")
+            return
+        }
+        Log.d("Detail2Fragment", "PLANT_ID: $plantId")
         viewModel.getAllPlants().observe(viewLifecycleOwner) { plants ->
-            val filteredDiseases =
-                plants?.filter { it?.idPlant in getPlantIdRange(plantId) }?.filterNotNull()
-                    ?: emptyList()
+            val filteredDiseases = plants?.filter { it?.idPlant in getPlantIdRange(plantId) }?.filterNotNull() ?: emptyList()
+            if (filteredDiseases.isEmpty()) {
+                Log.d("Detail2Fragment", "No diseases found for plant ID: $plantId")
+            } else {
+                Log.d("Detail2Fragment", "Diseases found: ${filteredDiseases.size}, plant ID: $plantId")
+            }
             binding.recyclerView.adapter = DiseaseAdapter(filteredDiseases)
         }
     }
 
     private fun getPlantIdRange(plantId: Int): IntRange {
         return when (plantId) {
-            in 1..4 -> 1..4
-            in 5..8 -> 5..8
-            in 9..12 -> 9..12
-            in 13..15 -> 13..15
-            in 16..25 -> 16..25
+            1 -> 1..4
+            2 -> 5..8
+            3 -> 9..12
+            4 -> 16..25
+            5 -> 13..15
             else -> IntRange.EMPTY
         }
     }
