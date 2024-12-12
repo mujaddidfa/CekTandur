@@ -1,11 +1,10 @@
 <resources>
     <string name="app_name">CekTandur</string>
-    <string name="welcome">welcome</string>
+    <string name="welcome">Welcome</string>
     <string name="desc_welcome_1">CekTandur membantu Anda mendeteksi masalah tanaman hanya dengan sekali scan foto. Mudah dan cepat!</string>
     <string name="desc_welcome_2">Temukan penyebab penyakit dan solusi terbaik untuk merawat tanaman Anda agar tetap sehat</string>
     <string name="desc_welcome_3">Mari mulai perjalanan Anda bersama CekTandur untuk tanaman yang lebih sehat!</string>
     <string name="next">Next</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="register">Daftar</string>
     <string name="login">Login</string>
@@ -15,4 +14,83 @@
     <string name="create_account">Buat Akun</string>
     <string name="name">Nama</string>
     <string name="have_account">Sudah punya akun?</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_account">Anda</string>
+    <string name="welcome_home">Selamat Datang, %1$s</string>
+    <string name="about_plant">Tentang Tanaman</string>
+    <string name="riwayat">Riwayat</string>
+    <string name="plant_name">Nama Tanaman</string>
+    <string name="logout">Logout</string>
+    <string name="gallery">Galeri</string>
+    <string name="camera">Kamera</string>
+    <string name="analyze">Analisis</string>
+    <string name="riwayatscan">Riwayat Scan</string>
+
+    <string-array name="plant_name">
+        <item>Anggur</item>
+        <item>Apel</item>
+        <item>Jagung</item>
+        <item>Tomat</item>
+        <item>Kentang</item>
+    </string-array>
+
+    <string-array name="plant_description">
+        <item>Tanaman anggur (Vitis vinifera) adalah tanaman merambat yang berasal dari kawasan Mediterania, Eropa Tengah, dan Asia Barat. Tanaman ini terkenal karena buahnya, yang dapat dimakan langsung sebagai buah segar, dikeringkan menjadi kismis, atau diolah menjadi jus, jeli, dan minuman fermentasi seperti anggur (wine).\nAnggur tumbuh baik di daerah beriklim hangat hingga sedang, dengan tanah yang subur dan drainase yang baik. Tanaman ini memiliki batang yang menjalar atau merambat dengan sulur-sulur yang membantu melekat pada penyangga. Buahnya tumbuh dalam bentuk tandan, dan tiap buah memiliki kulit tipis dengan daging yang berair.\nAnggur juga memiliki berbagai varietas, seperti anggur merah, hijau, dan ungu, yang masing-masing memiliki cita rasa dan kandungan gizi berbeda. Selain rasanya yang enak, anggur kaya akan antioksidan, vitamin C, dan polifenol yang bermanfaat bagi kesehatan, seperti menjaga kesehatan jantung dan melindungi sel tubuh dari kerusakan akibat radikal bebas.</item>
+        <item>Apel adalah tanaman buah yang berasal dari Asia Tengah dan kini dibudidayakan secara luas di seluruh dunia. Buah apel memiliki bentuk bulat atau lonjong dengan kulit tipis yang berwarna merah, hijau, atau kuning, serta daging buah yang renyah dan berair.\nApel tumbuh subur di daerah beriklim sedang, dengan tanah yang subur dan drainase yang baik. Pohon apel berukuran kecil hingga sedang, memiliki bunga putih atau merah muda yang indah sebelum buah mulai berkembang.\nTerdapat ribuan varietas apel, seperti Granny Smith, Fuji, dan Red Delicious, yang masing-masing memiliki rasa dan tekstur unik. Apel kaya akan serat, vitamin C, dan antioksidan yang baik untuk kesehatan pencernaan, menjaga kesehatan jantung, dan meningkatkan daya tahan tubuh.</item>
+        <item>Jagung adalah tanaman biji-bijian yang berasal dari Amerika Tengah dan telah menjadi salah satu sumber makanan pokok di dunia. Tanaman ini tumbuh dalam bentuk batang tinggi dengan daun panjang yang melindungi tongkol jagung tempat biji-bijian berkembang.\nJagung tumbuh optimal di daerah beriklim hangat, dengan tanah yang subur dan cukup air. Tongkolnya dilapisi oleh kelobot yang melindungi biji jagung hingga matang.\nJagung memiliki berbagai varietas, seperti jagung manis untuk konsumsi langsung dan jagung pipil untuk bahan olahan. Kandungan karbohidrat, serat, dan vitamin B dalam jagung menjadikannya sumber energi penting bagi tubuh. Jagung juga digunakan untuk makanan, pakan ternak, hingga bahan baku bioetanol.</item>
+        <item>Tomat adalah tanaman buah yang berasal dari Amerika Selatan dan sering digunakan sebagai bahan sayuran dalam berbagai hidangan. Buah tomat berbentuk bulat hingga oval, dengan kulit halus berwarna hijau saat muda dan merah, oranye, atau kuning ketika matang.\nTanaman tomat tumbuh subur di daerah beriklim hangat, dengan tanah subur dan cukup sinar matahari. Batangnya dapat berdiri tegak atau merambat dengan dukungan.\nTomat memiliki berbagai varietas, seperti tomat ceri, tomat plum, dan tomat beefsteak. Buah ini kaya akan likopen, vitamin C, dan kalium, yang bermanfaat untuk kesehatan kulit, mata, dan jantung. Tomat banyak digunakan dalam salad, sup, saus, hingga jus.</item>
+        <item>Kentang adalah tanaman umbi-umbian yang berasal dari wilayah pegunungan Andes di Amerika Selatan. Umbinya tumbuh di bawah tanah dan memiliki kulit berwarna cokelat, kuning, atau ungu, dengan daging umbi berwarna putih hingga kuning.\nTanaman kentang tumbuh baik di daerah beriklim dingin hingga sedang, dengan tanah gembur dan subur. Daunnya majemuk, dan bunganya kecil dengan warna putih hingga ungu.\nKentang memiliki banyak varietas, seperti kentang russet dan kentang merah, yang berbeda tekstur dan penggunaannya. Umbi ini kaya akan karbohidrat, vitamin C, vitamin B6, dan potasium, sehingga menjadi sumber energi yang penting. Kentang sering diolah menjadi makanan seperti kentang goreng, sup, dan kentang tumbuk.</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/grapes</item>
+        <item>@drawable/red_apple</item>
+        <item>@drawable/ear_of_corn</item>
+        <item>@drawable/tomato</item>
+        <item>@drawable/potato</item>
+    </integer-array>
+
+    <integer-array name="image_cover">
+        <item>@drawable/grapes_cover</item>
+        <item>@drawable/apple_cover</item>
+        <item>@drawable/corn_cover</item>
+        <item>@drawable/tomato_cover</item>
+        <item>@drawable/potato_cover</item>
+    </integer-array>
+
+    <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
+    <string name="result">Hasil Analisis</string>
+    <string name="save">Simpan</string>
+    <string name="plant_disease">%1$s %2$d%%</string>
+    <string name="disease_description">Deskripsi Penyakit</string>
+    <string name="causes">Penyebab</string>
+    <string name="list_causes">List penyebab penyakit</string>
+    <string name="solution">Solusi</string>
+    <string name="list_solution">List solusi penaganan</string>
+    <string name="product_recommendation_head">Rekomendasi Produk</string>
+    <string name="list_product_recommendation">List rekomendasi produk</string>
+    <string name="back">Kembali</string>
+    <string name="product_name">Nama Produk</string>
+    <string name="product_link">Link Produk</string>
+    <string name="analysis_date">Dianalisis pada tanggal: %1$s</string>
+    <string name="date">Tanggal</string>
+    <string name="disease_name">Nama Penyakit</string>
+    <string name="username">Username</string>
+    <string name="plant_description">Deskripsi tanaman</string>
+    <string name="about">Tentang</string>
+    <string name="diseases">Jenis Penyakit</string>
+
+    <integer-array name="background">
+        <item>@drawable/bg_anggur</item>
+        <item>@drawable/bg_apel</item>
+        <item>@drawable/bg_jagung</item>
+        <item>@drawable/bg_tomat</item>
+        <item>@drawable/bg_kentang</item>
+    </integer-array>
+
+
 </resources>

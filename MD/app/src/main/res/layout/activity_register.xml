@@ -78,7 +78,7 @@
         app:startIconDrawable="@drawable/baseline_email_24">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ed_login_email"
+            android:id="@+id/ed_register_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -112,7 +112,7 @@
         app:startIconDrawable="@drawable/baseline_lock_24">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ed_login_password"
+            android:id="@+id/ed_register_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -128,7 +128,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/green"
-        android:text="@string/login"
+        android:text="@string/register"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_have_account"
         app:layout_constraintEnd_toEndOf="parent"
@@ -147,5 +147,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

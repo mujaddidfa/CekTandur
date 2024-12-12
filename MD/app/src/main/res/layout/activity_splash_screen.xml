@@ -19,6 +19,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:lottie_rawRes="@raw/logocektd" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
