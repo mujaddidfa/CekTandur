@@ -1,5 +1,6 @@
 package com.dicoding.cektandur.ui
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.dicoding.cektandur.R
+import com.dicoding.cektandur.ui.detail.DetailActivity
 import com.dicoding.cektandur.utils.Plant
 
 class PlantAdapter(private val listPlant: ArrayList<Plant>) : RecyclerView.Adapter<PlantAdapter.PlantViewHolder>() {
@@ -21,6 +23,12 @@ class PlantAdapter(private val listPlant: ArrayList<Plant>) : RecyclerView.Adapt
         val (name, image) = listPlant[position]
         holder.tvPlantName.text = name
         holder.ivPlantImage.setImageResource(image)
+        holder.itemView.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, DetailActivity::class.java)
+            intent.putExtra("PLANT_NAME", name)
+            context.startActivity(intent)
+        }
     }
 
     class PlantViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

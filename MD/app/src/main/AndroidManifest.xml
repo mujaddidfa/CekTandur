@@ -23,7 +23,7 @@
         android:theme="@style/Base.Theme.CekTandur"
         tools:targetApi="31">
         <activity
-            android:name=".ui.history.historyActivity"
+            android:name=".ui.history.HistoryActivity"
             android:exported="false" />
         <activity
             android:name=".ui.detail.DetailActivity"
