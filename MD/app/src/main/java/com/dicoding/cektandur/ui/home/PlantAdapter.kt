@@ -1,6 +1,7 @@
 package com.dicoding.cektandur.ui.home
 
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,9 +22,22 @@ class PlantAdapter(private val listPlant: ArrayList<Plant>) : RecyclerView.Adapt
 
     override fun onBindViewHolder(holder: PlantViewHolder, position: Int) {
         val (name, image) = listPlant[position]
+        Log.d("PlantAdapter", "Binding item: $name at position $position")
         holder.tvPlantName.text = name
         holder.ivPlantImage.setImageResource(image)
+        val context = holder.itemView.context
+        val backgroundArray = context.resources.obtainTypedArray(R.array.background)
+        val backgroundResId = backgroundArray.getResourceId(position, -1)
+
+        // Set the background of the itemView
+        holder.itemView.setBackgroundResource(backgroundResId)
+
+        // Cleanup TypedArray to prevent memory leaks
+        backgroundArray.recycle()
+
         holder.itemView.setOnClickListener {
+            Log.d("PlantAdapter", "Clicked on item: $name at position $position")
+
             val context = holder.itemView.context
             val intent = Intent(context, DetailActivity::class.java)
             intent.putExtra("PLANT_NAME", name)

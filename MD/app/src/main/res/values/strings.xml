@@ -83,4 +83,14 @@
     <string name="plant_description">Deskripsi tanaman</string>
     <string name="about">Tentang</string>
     <string name="diseases">Jenis Penyakit</string>
+
+    <integer-array name="background">
+        <item>@drawable/bg_anggur</item>
+        <item>@drawable/bg_apel</item>
+        <item>@drawable/bg_jagung</item>
+        <item>@drawable/bg_tomat</item>
+        <item>@drawable/bg_kentang</item>
+    </integer-array>
+
+
 </resources>

@@ -23,6 +23,9 @@
             android:layout_height="wrap_content"
             android:text="@string/plant_name"
             android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginTop="15dp"
             android:textSize="18sp" />
 
         <ImageView
@@ -30,6 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_margin="20dp"
             tools:srcCompat="@tools:sample/avatars" />
     </LinearLayout>
 
