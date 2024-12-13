@@ -25,7 +25,7 @@ is an application that functions as a disease detector in plants by scanning one
 
 ## How to install application "CekTandur" ##
 
-  1. Download file [CekTandur](https://drive.google.com/drive/folders/1bUEwwUIqRfjozGewbw_2ZwlJdBNIx9Tc?usp=drive_link)
+  1. Download file [CekTandur](https://www.mediafire.com/file/rbonzzxefiuepso/CekTandur.apk/file)
   2. Install CekTandur.apk on your devices
   3. Register account on the app
   4. Login!
