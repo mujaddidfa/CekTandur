@@ -1,8 +1,12 @@
-# *CekTandur* #   
-<img src="documentation/icon.png" alt="Logo" width="150"/> 
+<p align="left"><img src="Documentation/Header.jpg" alt="Logo" width="200"/> </p> 
+
+
 
 
 is an application that functions as a disease detector in plants by scanning one of the leaves on the plant. This project consists of 3 learning path teams, namely, Machine Learning, Mobile Development, Cloud Computing. This application can help families who like to garden in the yard when experiencing problems with plants in their homes, this application can tell users how to solve the problems that occur in these plants. 
+
+
+![Mockup](Documentation/mockup.jpeg)
 
 ---
 
@@ -35,4 +39,3 @@ is an application that functions as a disease detector in plants by scanning one
 
 
 ## Documentation ##
-![Mockup](documentation/icon.png)
