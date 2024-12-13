@@ -1,4 +1,8 @@
-<p align="left"><img src="Documentation/logo.png" alt="Logo" width="300"/> </p> 
+<p align="left"><img src="Documentation/logo.png" alt="Logo" width="300" /> </p> 
+
+
+
+
 
 is an application that functions as a disease detector in plants by scanning one of the leaves on the plant. This project consists of 3 learning path teams, namely, Machine Learning, Mobile Development, Cloud Computing. This application can help families who like to garden in the yard when experiencing problems with plants in their homes, this application can tell users how to solve the problems that occur in these plants. 
 
@@ -21,7 +25,7 @@ is an application that functions as a disease detector in plants by scanning one
 
 ## How to install application "CekTandur" ##
 
-  1. Download file [CekTandur](https://www.linkedin.com/in/irwandika)
+  1. Download file [CekTandur](https://drive.google.com/drive/folders/1bUEwwUIqRfjozGewbw_2ZwlJdBNIx9Tc?usp=drive_link)
   2. Install CekTandur.apk on your devices
   3. Register account on the app
   4. Login!
@@ -34,5 +38,20 @@ is an application that functions as a disease detector in plants by scanning one
   4. check the result that appears
   5. You can save the analysis result in the history
 
+## Tech Stack ##
+|                                                          **Mobile Development**                                                         	| **Machine Learning**                                                                                                                               	| **Cloud Computing**                                                              	|
+|:---------------------------------------------------------------------------------------------------------------------------------------:	|----------------------------------------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------------------------------------	|
+| Android Studio                                                                                                                          	| Jupyter notebook                                                                                                                                   	| VS Code                                                                          	|
+| Figma                                                                                                                                   	| Google Colab                                                                                                                                       	| Post Man                                                                         	|
+| GitHub                                                                                                                                  	| GitHub                                                                                                                                             	| GitHub                                                                           	|
+| Android Library :<br>Glide<br>Retrofit<br>JUnit, Mockito<br>Espresso<br>Android KTX<br>Lottie<br>Jetpack:<br>Room<br>ViewModel/LiveData 	| Extension & Environment library :<br>Python<br>Tensorflow<br>TensorFlow-lite<br>Tensorflow JS<br>Numpy<br>Matplotlib<br>Pandas<br>Sklearn<br>Keras 	| Google Cloud Platform :<br>Cloud Storage<br>Cloud Run<br>App Engine<br>Cloud SQL 	|
+
 
 ## Documentation ##
+![Alt text](Documentation/APP/register.jpeg) ![Alt text](Documentation/APP/login.jpeg)
+![Alt text](Documentation/APP/loading.jpeg) ![Alt text](Documentation/APP/scan.jpeg)
+![Alt text](Documentation/APP/scan-2.jpeg) ![Alt text](Documentation/APP/result.jpeg)
+![Alt text](Documentation/APP/tentang.jpeg) ![Alt text](Documentation/APP/tentang-2.jpeg)
+
+
+
