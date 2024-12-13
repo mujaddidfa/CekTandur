@@ -1,4 +1,4 @@
-<p align="left"><img src="Documentation/Header.jpg" alt="Logo" width="200"/> </p> 
+<p align="left"><img src="Documentation/logo.jpg" alt="Logo" width="200"/> </p> 
 
 
 
