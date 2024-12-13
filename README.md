@@ -1,7 +1,4 @@
-<p align="left"><img src="Documentation/logo.jpg" alt="Logo" width="200"/> </p> 
-
-
-
+<p align="left"><img src="Documentation/logo.png" alt="Logo" width="300"/> </p> 
 
 is an application that functions as a disease detector in plants by scanning one of the leaves on the plant. This project consists of 3 learning path teams, namely, Machine Learning, Mobile Development, Cloud Computing. This application can help families who like to garden in the yard when experiencing problems with plants in their homes, this application can tell users how to solve the problems that occur in these plants. 
 
